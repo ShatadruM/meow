@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLenis } from "../hooks/useLenis";
-import ParallaxSection from "../components/Parallaxsection";
+import ParallaxSection from "../components/ParallaxSection";
 
 const Home = () => {
   useLenis();

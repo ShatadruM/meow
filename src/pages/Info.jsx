@@ -80,7 +80,7 @@ const Info = () => {
           <h1 className="font-bebas text-[45rem] md:text-[45vw] leading-none text-yellow-50 text-right">FO</h1>
         </div>
 
-        {/* 3. SCROLLING TEXT SECTION (Student Led...) */}
+       
         <section className="relative mt-60 h-screen w-full bg-transparent px-6 md:px-12 py-24 flex flex-col justify-between overflow-hidden z-20">
           <div className="w-full flex justify-start">
             <div className="max-w-[70%]">

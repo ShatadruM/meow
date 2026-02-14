@@ -12,10 +12,10 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* Desktop: Vertical Stack */}
           <div className="hidden md:flex flex-col text-sm uppercase tracking-[0.2em] font-nunito">
-            <a href="#work" className="hover:opacity-50 transition-opacity">Work</a>
-            <a href="#labs" className="hover:opacity-50 transition-opacity">Labs</a>
-            <a href="#images" className="hover:opacity-50 transition-opacity">Images</a>
-            <a href="#info" className="hover:opacity-50 transition-opacity">Info</a>
+            <a href="work" className="hover:opacity-50 transition-opacity">Work</a>
+            <a href="labs" className="hover:opacity-50 transition-opacity">Labs</a>
+            <a href="images" className="hover:opacity-50 transition-opacity">Images</a>
+            <a href="info" className="hover:opacity-50 transition-opacity">Info</a>
           </div>
 
           {/* Mobile: Menu Button */}

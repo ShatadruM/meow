@@ -22,7 +22,7 @@ const Coordinates = () => {
       "
     >
       {/* Text Content */}
-      <div className="flex flex-col font-bebas clash-title text-xs md:text-lg">
+      <div className="flex flex-col font-nunito clash-title text-xs md:text-lg">
         <div>{lat}</div>
         <div>{lng}</div>
       </div>

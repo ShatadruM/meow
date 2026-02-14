@@ -37,37 +37,20 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        {/* PAGE 2: TWO HEADINGS (Transparent Background) */}
-        <section className="relative h-screen w-full bg-transparent px-6 md:px-12 py-24 flex flex-col justify-between overflow-hidden">
-          <div className="w-full flex justify-start">
-            <div className="max-w-[70%]">
-              <h2 className="font-bebas text-6xl md:text-9xl text-white leading-[0.85] text-left uppercase tracking-tighter">
-                STUDENT LED INNOVATION LAB, <br />
-                TECH LAB, RESEARCH LAB
-              </h2>
-            </div>
-          </div>
-          <div className="w-full flex justify-end">
-            <div className="max-w-[70%]">
-              <h2 className="font-bebas text-6xl md:text-9xl text-white leading-[0.85] text-left uppercase tracking-tighter">
-                INDIA'S FIRST QS RANKED LAB <br />
-                IN SRM AP UNIVERSITY LOREM IPSUM
-              </h2>
-            </div>
-          </div>
-        </section>
+       
 
         <ParallaxSection
           imageSrc="/image1.png"
           title={
             <>
-            WE INNOVATE. WE CRAFT. <br />
-            WE DELIVER.
+              WE INNOVATE. WE CRAFT. <br />
+              WE DELIVER.
             </>
           }
-          subtitle="WE DELIVER."
-          linkText="[EXPLORE MORE WORK]"
+
+
+          linkText="[EXPLORE OUR WORK]"
+           linkUrl="/work"
         />
 
         {/* PAGE 4: Second Parallax Section */}
@@ -83,10 +66,10 @@ const Home = () => {
             </>
           }
           linkText="[SEE THE PROCESS]"
-          linkUrl="/LABS"
+          linkUrl="/labs"
         />
-         <ParallaxSection
-          imageSrc="/image.png"
+        <ParallaxSection
+          imageSrc="/image3.png"
           title={
             <>
               WE ARE NOT A CULT. <br />
@@ -96,6 +79,18 @@ const Home = () => {
           }
           linkText="[LEARN MORE ABOUT US]"
           linkUrl="/info"
+        />
+        <ParallaxSection
+          title={
+            <>
+              WE PROBABLY <br />
+              SHOULDN'T <br />
+              POST THIS...
+            </>
+          }
+          linkText="[WHAT GOES ON INSIDE]"
+          linkUrl="/images"
+          enableTrail={true}
         />
       </main>
     </div>

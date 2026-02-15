@@ -1,32 +1,60 @@
-import React, { useRef } from 'react';
+import React, { use, useRef } from 'react';
 import VideoParallaxSection from '../components/VideoParallaxSection'; 
+import { useLenis } from '../hooks/useLenis';
 
 const Labs = () => {
   const sectionRef = useRef(null);
+  useLenis();
 
   return (
     // MAIN WRAPPER: Removed 'h-screen' and 'overflow-hidden' so we can scroll
     <div className="relative w-full bg-black">
       
-      {/* --- HERO SECTION (Sticky) --- */}
-      {/* Added 'sticky top-0' so the next video slides OVER it */}
-      <div 
-        ref={sectionRef} 
-        className="sticky top-0 h-screen w-full overflow-hidden bg-black z-0"
-      >
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-80" 
-          style={{ backgroundImage: "url('/lab-bg.png')" }}
-        />
-        
-        <div className="relative z-10 flex h-full w-full items-center justify-between px-4 md:px-20 translate-y-32">
-          <h1 className="font-bebas text-[45rem] md:text-[30vw] leading-none text-yellow-50">PILL</h1>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[70%] w-auto">
-            <img src="/ntl-text.png" alt="NTL Text" className="h-full w-auto object-contain" />
-          </div>
-          <h1 className="font-bebas text-[45rem] md:text-[30vw] leading-none text-yellow-50 text-right">ARS</h1>
-        </div>
-      </div>
+     <div 
+  ref={sectionRef} 
+  className="sticky top-0 h-screen w-full overflow-hidden bg-black z-0"
+>
+  {/* 1. BACKGROUND IMAGE DIV */}
+  <div 
+    className="absolute inset-0 z-0 bg-cover bg-center opacity-80
+               bg-[url('/lab-bg2.png')]      
+               md:bg-[url('/lab-bg.png')]     
+              " 
+    // Removed the style={{ backgroundImage... }} prop so classes can take effect
+  />
+  
+ <div className="relative z-10 flex h-full w-full 
+                items-end justify-center pb-30     
+                md:items-center md:justify-between md:pb-0 /* Desktop: Center vertically, split apart */
+                px-4 md:px-20 translate-y-32">
+  
+  {/* LEFT TEXT "PILL" */}
+  {/* Mobile: 40vw to fit half screen. Desktop: 30vw massive. */}
+  <h1 className="font-bebas text-[40vw] md:text-[30vw] leading-none text-yellow-50">
+    PILL
+  </h1>
+  
+  {/* CENTER IMAGE */}
+  {/* Mobile: Floating at top (top-[15%]), smaller height (h-[30vh]) */}
+  {/* Desktop: Centered (top-1/2), full height (h-[70%]) */}
+  <div className="absolute left-1/2 -translate-x-1/2 
+                  top-[15%] h-[30vh] 
+                  md:top-1/2 md:-translate-y-1/2 md:h-[70%] 
+                  w-auto transition-all duration-500">
+    <img 
+      src="/ntl-text.png" 
+      alt="NTL Text" 
+      className="h-full w-auto object-contain" 
+    />
+  </div>
+
+  {/* RIGHT TEXT "ARS" */}
+  <h1 className="font-bebas text-[40vw] md:text-[30vw] leading-none text-yellow-50 text-right">
+    ARS
+  </h1>
+  
+</div>
+</div>
 
       {/* --- VIDEO STACKING SECTIONS --- */}
       {/* These will naturally stack on top of the Hero and each other */}

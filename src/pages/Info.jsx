@@ -10,6 +10,7 @@ const CountUp = ({ end, duration = 2000 }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
+  useLenis();
 
   useEffect(() => {
     const observer = new IntersectionObserver(

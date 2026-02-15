@@ -2,64 +2,58 @@ import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectCard from '../components/ProjectCard';
-import { animateLeft, animateRight } from '../hooks/useCenterOut';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   { id: 1, title: "CORTEX", category: "ERP", src: "/image1.png" },
-  { id: 2, title: "HUSH", category: "APP DEVELOPMENT", src: "/image2.png" },
+  { id: 2, title: "HUSH", category: "APP", src: "/image2.png" },
   { id: 3, title: "ROBO", category: "IOT", src: "/image3.png" },
-  { id: 4, title: "HACKER", category: "CYBERSECURITY", src: "/image1.png" },
+  { id: 4, title: "HACKER", category: "SEC", src: "/image1.png" },
 ];
 
 const Work = () => {
   const containerRef = useRef(null);
-  const projectContainerRef = useRef(null);
+  const textRef = useRef(null);
+  const gridRef = useRef(null);
 
- useLayoutEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       
-      // --- 1. LOAD ANIMATION ---
-      animateLeft(".left-text-char");
-      animateRight(".right-text-char");
+      // 1. INTRO ANIMATION (Blur In)
+      gsap.fromTo(".work-text-char", 
+        { opacity: 0, filter: "blur(15px)", y: 50 },
+        { opacity: 1, filter: "blur(0px)", y: 0, duration: 1.5, ease: "power3.out", stagger: 0.02 }
+      );
 
-
-      // --- 2. PROJECT SCROLL ANIMATION ---
-      gsap.set(projectContainerRef.current, { y: "100vh" });
-
-      gsap.to(projectContainerRef.current, {
+      // 2. SCROLL ANIMATION (Projects Up, Text Fade Out)
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top top",
-          end: "+=300%",
+          end: "+=250%", // Length of scroll
           pin: true,
           scrub: 1,
-        },
-        y: -200, 
-        ease: "none",
+        }
       });
 
+      // Start grid below viewport
+      gsap.set(gridRef.current, { y: "100vh" });
 
-      // --- 3. TEXT OPACITY ANIMATION (FIXED) ---
-      // We use fromTo to guarantee the text starts at Opacity 1 and goes to 0
-      gsap.fromTo([".left-text-char", ".right-text-char"], 
-        { 
-          opacity: 1 // Start State
-        },
-        {
-          opacity: 0, // End State
-          ease: "power1.inOut",
-          stagger: 0.01,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top top",
-            end: "+=300%",
-            scrub: true, // Instant scrub response
-          },
-          overwrite: "auto" // Ensures this takes priority over load animation
-        }
-      );
+      // Move Grid Up
+      tl.to(gridRef.current, {
+        y: -150, // Move up past header
+        duration: 10,
+        ease: "none"
+      });
+
+      // Fade Text Out (Delayed start so it doesn't vanish instantly)
+      tl.to(textRef.current, {
+        opacity: 0,
+        y: -50,
+        duration: 5,
+        ease: "power1.in"
+      }, "<+2"); // Start 20% into the grid movement
 
     }, containerRef);
 
@@ -67,70 +61,43 @@ const Work = () => {
   }, []);
 
   return (
-    <section 
-      ref={containerRef} 
-      className="relative h-screen w-full overflow-hidden bg-[#EAEAE5]"
-    >
+    <section ref={containerRef} className="relative h-screen w-full overflow-hidden bg-[#EAEAE5]">
       
-      {/* --- BACKGROUND LAYER --- */}
-      <div className="relative z-10 flex h-full w-full items-center justify-between px-4 md:px-20 pointer-events-none">
+      {/* --- BACKGROUND TEXT LAYER --- */}
+      <div ref={textRef} className="relative z-10 flex h-full w-full items-center justify-center md:justify-between px-2 md:px-20 pointer-events-none">
+        
         {/* Left Text */}
-        <h1 className="font-bebas text-[12vw] md:text-[11rem] leading-none text-[#1A1A1A] text-left">
-          {"FEATURED".split("").map((char, index) => (
-            <span key={index} className="left-text-char inline-block will-change-transform">
-              {char}
-            </span>
+        <h1 className="font-bebas text-[12vw] md:text-[11rem] leading-none text-[#1A1A1A] shrink-0">
+          {"FEATURED".split("").map((char, i) => (
+            <span key={i} className="work-text-char inline-block">{char}</span>
           ))}
         </h1>
 
         {/* Center Image */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[70%] w-auto z-20">
-          <img 
-            src="/ntl-text.png" 
-            alt="NTL Text" 
-            className="h-full w-auto object-contain" 
-          />
+        <div className="mx-2 md:mx-0 h-[15%] md:h-[60%] w-auto z-20">
+          <img src="/ntl-text.png" alt="NTL" className="h-full w-auto object-contain" />
         </div>
 
         {/* Right Text */}
-        <h1 className="font-bebas text-[12vw] md:text-[11rem] leading-none text-[#1A1A1A] text-right">
-          {"PROJECTS".split("").map((char, index) => (
-            <span key={index} className="right-text-char inline-block will-change-transform">
-              {char}
-            </span>
+        <h1 className="font-bebas text-[12vw] md:text-[11rem] leading-none text-[#1A1A1A] shrink-0">
+          {"PROJECTS".split("").map((char, i) => (
+            <span key={i} className="work-text-char inline-block">{char}</span>
           ))}
         </h1>
       </div>
 
-      {/* --- FOREGROUND PROJECT LAYER --- */}
-      {/* 1. h-full & w-full: Takes up full screen size 
-          2. absolute inset-0: Overlays the text
-          3. pt-20: Adds some padding so projects don't hit the absolute top
-      */}
-      <div 
-        ref={projectContainerRef}
-        className="absolute inset-0 z-30 flex flex-col items-start justify-start pt-[10vh] px-4 md:px-24 w-full h-full pointer-events-auto"
-      >
-          {/* Grid Container */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 md:gap-x-32 lg:gap-x-60 gap-y-20 w-full">
-            {projects.map((project, index) => (
-             <div 
-                    key={project.id} 
-                    // WIDTH CHANGE: w-[85%] mx-auto makes cards narrower and centered in their column
-                    className={`w-[85%] mx-auto `}
-                  >
-                <ProjectCard 
-                  src={project.src}
-                  title={project.title}
-                  category={project.category}
-                  // SMALLER CARDS: Force height to 40vh
-                  className="h-[40vh] md:h-[45vh]"
-                />
-              </div>
-            ))}
-          </div>
+      {/* --- FOREGROUND PROJECT GRID --- */}
+      <div ref={gridRef} className="absolute inset-0 z-30 flex flex-col items-center pt-[15vh] w-full h-full pointer-events-auto">
+         <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-32 gap-y-20 w-full">
+               {projects.map((p, i) => (
+                  <div key={p.id} className={`w-[90%] md:w-[80%] mx-auto ${i % 2 !== 0 ? "md:translate-y-24" : ""}`}>
+                     <ProjectCard src={p.src} title={p.title} category={p.category} className="h-[40vh] md:h-[50vh]" />
+                  </div>
+               ))}
+            </div>
+         </div>
       </div>
-
     </section>
   );
 };

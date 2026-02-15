@@ -60,7 +60,7 @@ const Labs = () => {
       />
 
       <VideoParallaxSection 
-        videoSrc="/videos/robotics.mp4"
+        videoSrc="/satoshi-vid.mp4"
         title="SATOSHI LAB"
         description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
         linkUrl="/labs/robotics"

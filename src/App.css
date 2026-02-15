@@ -1,0 +1,34 @@
+/* --- FOOTER REVEAL LOGIC --- */
+
+/* 1. The Main Content Wrapper */
+.main-content {
+  /* IMPORTANT: This creates a new "stacking context" */
+  /* Any 'fixed' element inside here (like your video) will now stick to THIS div, 
+     not the window. So when this div scrolls up, the video goes with it. */
+  transform: translateZ(0); 
+  will-change: transform;
+
+  /* Ensure background is solid so you don't see footer through it */
+  background-color: #EAEAE5; /* Or white, matches your design */
+  
+  /* Make space for the footer to show at the bottom */
+  /* This value MUST match the height of your Footer */
+  margin-bottom: 100vh; 
+  min-height: 100vh;
+}
+
+/* 2. The Footer Container */
+.footer-placeholder {
+  /* This height MUST match the margin-bottom above */
+  height: 100vh; 
+}
+
+/* 3. Mobile Adjustment (Optional but recommended) */
+@media (max-width: 768px) {
+  .main-content {
+    margin-bottom: 100vh; /* Taller footer on mobile */
+  }
+  .footer-placeholder {
+    height: 100vh;
+  }
+}

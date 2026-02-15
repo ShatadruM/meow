@@ -28,15 +28,35 @@ const Home = () => {
       */}
       <main className="relative z-10 w-full">
         {/* PAGE 1: NEXT TECH LAB (Transparent Background) */}
-        <section className="relative h-screen w-full bg-transparent overflow-hidden">
-          <div className="flex h-full flex-col items-center justify-center">
-            <div className="absolute -bottom-10 left-0 w-full leading-none">
-              <h1 className="font-bebas text-amber-50 text-[25vw] tracking-tighter uppercase whitespace-nowrap">
-                NEXT TECH LAB
-              </h1>
-            </div>
-          </div>
-        </section>
+       <section className="relative h-screen w-full bg-transparent overflow-hidden">
+  <div className="flex h-full flex-col items-center justify-center">
+    
+    {/* POSITIONING LOGIC:
+       1. Mobile: absolute top-1/2 left-1/2 ... (Centers it perfectly in the middle of screen)
+       2. Desktop (md): top-auto bottom-[-2.5rem] ... (Resets it to the bottom, overriding the center styles)
+    */}
+    <div className="absolute w-full leading-none z-0
+                    top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                    md:top-auto md:-bottom-10 md:left-0 md:translate-x-0 md:translate-y-0">
+      
+      <h1 className="font-bebas text-amber-50 tracking-tighter uppercase text-center
+                     text-[45vw] leading-[0.8]   /* Mobile: Bigger text, tighter line height */
+                     md:text-[25vw] md:leading-none md:whitespace-nowrap /* Desktop: Original size, single line */
+                     ">
+        
+        {/* STACKING LOGIC:
+           - 'block': Forces a new line on mobile
+           - 'md:inline': Keeps it on the same line on desktop
+           - '&nbsp;': Adds a non-breaking space for the desktop single-line view
+        */}
+        <span className="block md:inline">NEXT<span className="hidden md:inline">&nbsp;</span></span>
+        <span className="block md:inline">TECH<span className="hidden md:inline">&nbsp;</span></span>
+        <span className="block md:inline">LAB</span>
+      </h1>
+
+    </div>
+  </div>
+</section>
        
 
         <ParallaxSection

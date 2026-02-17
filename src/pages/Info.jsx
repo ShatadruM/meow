@@ -174,7 +174,7 @@ const Info = () => {
       </div>
 
       {/* STATS SECTION (Solid Background covers the parallax image) */}
-      <section className="relative z-30 w-full bg-[#EAEAE5] px-6 py-40">
+      <section className="light-section relative z-30 w-full bg-[#EAEAE5] px-6 py-40">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
           
           {/* STAT 1 */}

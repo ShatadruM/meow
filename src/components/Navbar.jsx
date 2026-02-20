@@ -78,12 +78,12 @@ const Navbar = () => {
           ref={navRef}
           className={`w-full bg-transparent px-6 py-6 font-nunito transition-colors duration-300 pointer-events-auto ${textColorClass}`}
         >
-          <div className="max-w-[1800px] mx-auto flex justify-between items-center md:grid md:grid-cols-3">
+          <div className="max-w-450 mx-auto flex justify-between items-center md:grid md:grid-cols-3">
             
             {/* LEFT SECTION */}
             <div className="flex items-center justify-start">
               <div className="hidden md:flex flex-col text-sm uppercase tracking-[0.2em]">
-                {['Work', 'Labs', 'Images', 'Info'].map((item) => (
+                {['Work', 'Labs', 'Gallery', 'Info'].map((item) => (
                   <a key={item} href={`/${item.toLowerCase()}`} className="hover:opacity-50 transition-opacity">
                     {item}
                   </a>

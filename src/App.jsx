@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Work from './pages/Work';
 import './App.css';
+import Images from './pages/Images';
 
 function App() {
  return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/info" element={<Info />} />
           <Route path="/labs" element={<Labs />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/gallery" element={<Images />} />
         </Routes>
       </div>
 

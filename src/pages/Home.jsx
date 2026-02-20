@@ -44,11 +44,7 @@ const Home = () => {
                      md:text-[25vw] md:leading-none md:whitespace-nowrap /* Desktop: Original size, single line */
                      ">
         
-        {/* STACKING LOGIC:
-           - 'block': Forces a new line on mobile
-           - 'md:inline': Keeps it on the same line on desktop
-           - '&nbsp;': Adds a non-breaking space for the desktop single-line view
-        */}
+      
         <span className="block md:inline">NEXT<span className="hidden md:inline">&nbsp;</span></span>
         <span className="block md:inline">TECH<span className="hidden md:inline">&nbsp;</span></span>
         <span className="block md:inline">LAB</span>
@@ -109,7 +105,7 @@ const Home = () => {
             </>
           }
           linkText="[WHAT GOES ON INSIDE]"
-          linkUrl="/images"
+          linkUrl="/gallery"
           enableTrail={true}
         />
       </main>

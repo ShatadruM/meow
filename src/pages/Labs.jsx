@@ -63,37 +63,36 @@ const Labs = () => {
         videoSrc="/Norman-vid.mp4" 
         title="NORMAN LAB"
         description="Pushing the boundaries of machine learning and neural networks to solve complex problems in real-time environments."
-        linkUrl="/labs/ai"
+        linkUrl="/labs/norman"
       />
 
       <VideoParallaxSection 
         videoSrc="/mccarthy-vid.mp4"
         title="MCCARTHY LAB"
         description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
-        linkUrl="/labs/cyber"
+        linkUrl="/labs/mccarthy"
       />
 
       <VideoParallaxSection 
         videoSrc="/pausch-vid.mp4"
         title="PAUSCH LAB"
         description="Connecting the physical and digital worlds through smart sensors and automated mesh networks."
-        linkUrl="/labs/iot"
+        linkUrl="/labs/pausch"
       />
 
       <VideoParallaxSection 
         videoSrc="/videos/arvr.mp4"
         title="TESLA LAB"
         description="Crafting immersive AR and VR experiences that redefine how humans interact with digital information."
-        linkUrl="/labs/xr"
+        linkUrl="/labs/tesla"
       />
 
       <VideoParallaxSection 
         videoSrc="/satoshi-vid.mp4"
         title="SATOSHI LAB"
         description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
-        linkUrl="/labs/robotics"
+        linkUrl="/labs/satoshi"
       />
-
     </div>
   );
 }

@@ -45,7 +45,7 @@ const ParallaxSection = ({ imageSrc, title, linkText, linkUrl, enableTrail = fal
       ref={setSectionNode} 
       className="relative h-screen w-full z-40 overflow-hidden bg-black shadow-2xl border-t border-white/10"
     >
-      {/* Render trail only if enabled and node exists */}
+      
       {enableTrail && sectionNode && <ImageTrail targetNode={sectionNode} />}
 
       {imageSrc && (

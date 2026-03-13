@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="flex flex-col text-left md:text-right w-full md:w-auto">
              {/* displayed horizontally on mobile to save vertical space, vertical on desktop */}
              <ul className="flex md:flex-col flex-wrap gap-x-6 gap-y-2 md:gap-y-1">
-               {["Work", "Info", "Images", "Labs"].map((link, i) => (
+               {["Work", "Info", "Gallery", "Labs"].map((link, i) => (
                   <li key={i}>
                     <a 
                       href={`/${link.toLowerCase()}`} 

@@ -86,7 +86,6 @@ const Info = () => {
           className="absolute inset-0 z-0 bg-cover bg-center opacity-80 h-full w-full will-change-transform"
           style={{
             backgroundImage: "url('/info.png')",
-            // No inline style transform here, GSAP handles it
           }}
         />
 

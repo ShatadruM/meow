@@ -82,7 +82,7 @@ const Work = () => {
     <section 
       ref={containerRef} 
       // BG COLOR IS CRITICAL HERE to prevent "White Screen" during pinning
-      className="relative h-screen w-full overflow-hidden bg-[#EAEAE5]"
+      className="relative h-screen w-full bg-[#EAEAE5]"
     >
       
       {/* --- LAYER 1: TEXT (Moves Up) --- */}
@@ -110,7 +110,7 @@ const Work = () => {
       {/* --- LAYER 2: CENTER IMAGE (Static) --- */}
       {/* z-0: At the bottom. Static. */}
       <div 
-        className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
+        className=" inset-0 z-0 flex items-center fixed justify-center pointer-events-none"
       >
         {/* Responsive sizing: h-[20%] mobile, h-[60%] desktop */}
         <div className="h-[20%] md:h-[60%] w-auto">
@@ -134,7 +134,7 @@ const Work = () => {
                {projects.map((p, i) => (
                   <div 
                     key={p.id} 
-                    className={`w-[90%] md:w-[80%] mx-auto ${i % 2 !== 0 ? "md:translate-y-24" : ""}`}
+                    className={`w-[90%] md:w-[80%] mx-auto`}
                   >
                      <ProjectCard 
                         src={p.src} 

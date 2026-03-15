@@ -1,53 +1,35 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useLenis } from "../../hooks/useLenis"; 
-import Card2 from '../../components/Card2';
-import normanData from "../../members/norman.json";
 
-const Norman = () => {
+const Pausch = () => {
   useLenis();
- 
   const containerRef = useRef(null);
-
-  // Group members dynamically based on your JSON roles
-  const teamGroups = [
-    {
-      title: "SYNDICATES",
-      members: normanData.filter(m => m.role.toLowerCase().includes('syndicate') )
-    },
-    {
-      title: "MEMBERS",
-      members: normanData.filter(m => m.role.toLowerCase() === 'member')
-    },
-    {
-      title: "ASSOCIATES",
-      members: normanData.filter(m => m.role.toLowerCase() === 'associate')
-    }
-  ];
 
   return (
   <>
    {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
    <div className='h-auto'>
-    <div ref={containerRef} className="relative w-full h-screen bg-[#f6efae] overflow-hidden flex flex-col">
+    <div ref={containerRef} className="relative w-full h-screen bg-[#bcbdca] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
                       flex-col md:flex-row 
                       justify-center items-center md:justify-between 
                       px-4 md:px-20 pb-20 md:pb-0 translate-y-12 md:translate-y-32">
         
-        {/* LEFT TEXT "BUILD BOLD" */}
+        {/* LEFT TEXT "BEND REALITY" */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
-          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#f25a42]">
-            BUILD<br/>
-            <span className="text-[#f25a42]">BOLD</span>
+          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1c55f1]">
+            BEND<br/>
+            <span className="text-[#1c55f1]">REALITY</span>
           </h1>
         </div>
 
         {/* CENTER IMAGE */}
+        {/* Changed to relative for mobile to sit in flex flow, absolute on md: to keep desktop unchanged */}
         <div className="center-image relative md:absolute 
                         md:left-1/2 md:-translate-x-1/2 
                         md:top-1/2 md:-translate-y-1/2 
-                        h-[25vh] md:h-[70%] 
+                        h-[30vh] md:h-[70%] 
                         w-full md:w-auto transition-all duration-500 z-0
                         my-8 md:my-0 flex justify-center items-center">
           
@@ -58,7 +40,7 @@ const Norman = () => {
           />
           
           <div 
-            className="absolute inset-0 bg-[#f25a42]"
+            className="absolute inset-0 bg-[#1c55f1]"
             style={{
               mask: 'url(/ntl-text.svg) no-repeat center center / contain',
               WebkitMask: 'url(/ntl-text.svg) no-repeat center center / contain',
@@ -66,23 +48,24 @@ const Norman = () => {
           />
         </div>
 
-        {/* RIGHT TEXT "MADE HUMAN" */}
+        {/* RIGHT TEXT "BUILD PLAY" */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
-          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#f25a42]">
-            MADE<br/>
-            <span className="text-[#f25a42]">HUMAN</span>
+          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1c55f1]">
+            BUILD<br/>
+            <span className="text-[#1c55f1]">PLAY</span>
           </h1>
         </div>
 
       </div>
 
-      {/* TOP TEXT: "NORMAN LAB" */}
+      {/* TOP TEXT: "PAUSCH LAB" */}
+      {/* Changed top-24 to top-8 for mobile, kept md:top-32 for desktop */}
       <div className="top-text absolute top-8 md:top-32 left-1/2 -translate-x-1/2 z-20">
         <a 
           href="#" 
-          className="text-[#f25a42] font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase relative z-10 underline underline-offset-5 decoration-1"
+          className="text-[#1c55f1] font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase relative z-10 underline underline-offset-5 decoration-1"
         >
-          [Norman Lab]
+          [MacCarthy Lab]
         </a>
       </div>
 
@@ -139,39 +122,6 @@ const Norman = () => {
         <TiltedMarquee />
     </div>
 
-    {/* --- TEAM CARDS SECTION --- */}
-    <section className="relative w-full bg-[#000000] px-6 md:px-20 py-24 min-h-screen">
-      <div className="max-w-7xl mx-auto flex flex-col gap-24">
-        {teamGroups.map((group, index) => {
-          if (group.members.length === 0) return null; // Skip empty groups
-          
-          return (
-            <div key={index} className="flex flex-col">
-              {/* Group Heading */}
-              <div className="mb-16 border-b-4 border-white pb-4">
-                <h2 className="font-bebas text-5xl md:text-6xl text-white tracking-wide">
-                  {group.title}
-                </h2>
-              </div>
-
-              {/* Grid: 1 col on mobile, up to 4 on desktop. 
-                  gap-y-24 prevents vertical overlapping.
-                  pr-12 (padding-right) and pb-12 ensure edge cards don't bleed out of screen on mobile when sliding 48px */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-24 pr-12 pb-12">
-                {group.members.map((member) => (
-                  <div key={member.id} className="flex justify-center sm:justify-start">
-                    <Card2 data={member} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-
-
-
    </div>
   </>
   );
@@ -179,7 +129,7 @@ const Norman = () => {
 
 const TiltedMarquee = () => {
   const marqueeRef = useRef(null);
-  const text = "MEET THE TEAM • MEET THE TEAM • MEET THE TEAM • MEET THE TEAM •";
+  const text = "-. --- .-. -- .- -. /   / -. --- .-. -- .- -. /   / -. --- .-. -- .- -. /   / -. --- .-. -- .- -. / ";
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -223,4 +173,4 @@ const TiltedMarquee = () => {
   );
 };
 
-export default Norman;
+export default Pausch;

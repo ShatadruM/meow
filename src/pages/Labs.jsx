@@ -70,7 +70,7 @@ const Labs = () => {
         videoSrc="/mccarthy-vid.mp4"
         title="MCCARTHY LAB"
         description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
-        linkUrl="/labs/mccarthy"
+        linkUrl="/labs/maccarthy"
       />
 
       <VideoParallaxSection 

@@ -8,6 +8,10 @@ import Work from './pages/Work';
 import './App.css';
 import Images from './pages/Images';
 import Norman from './pages/labs/Norman';
+import Pausch from './pages/labs/Pausch';
+import Maccarthy from './pages/labs/Maccarthy';
+import Card from './components/Card';
+import TestPage from './pages/TestPage';
 
 function App() {
  return (
@@ -22,6 +26,24 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/gallery" element={<Images />} />
            <Route path="/labs/norman" element={<Norman />} />
+           <Route path="/labs/pausch" element={<Pausch />} />
+           <Route path="/labs/maccarthy" element={<Maccarthy />} />
+           <Route path="/test" element={<Card />} />
+           <Route 
+  path="/card" 
+  element={
+    <Card 
+      name="John Doe" 
+      idNumber="12345" 
+      photoUrl="/photo.png" 
+      role="Member" 
+      links={[
+        "https://github.com/ShatadruM",
+        "https://www.linkedin.com/in/shatadru-mukhopadhyay-6a5a4b291/"
+      ]}
+    />
+  } 
+/>
         </Routes>
       </div>
 

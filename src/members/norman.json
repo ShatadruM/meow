@@ -1,0 +1,122 @@
+
+[
+  {
+    "id": "AP24110011410",
+    "idNumber": "AP24110011410",
+    "name": "Ghule Aniketh",
+    "image": "https://drive.google.com/open?id=1GdeKOoMQ9Y5U_XsdEgTu_sq48xhQVxbM",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/ghuleaniketh",
+      "linkedin": "https://www.linkedin.com/in/aniketh-ghule-111b2a326",
+      "portfolio": "https://anikethghule.tech/",
+      "twitter": "https://x.com/AnikethGhu18657",
+      "instagram": "https://www.instagram.com/ghule_aniketh?igsh=MWV1cnd4MjV3enV1bw=="
+    }
+  },
+  {
+    "id": "AP23110010732",
+    "idNumber": "AP23110010732",
+    "name": "Shatadru Mukhopadhyay",
+    "image": "https://drive.google.com/open?id=1iM-dF-irnl-WoAD1t0IPia3VgJ-DvXAu",
+    "role": "Syndicate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/ShatadruM",
+      "linkedin": "https://www.linkedin.com/in/shatadru-mukhopadhyay-6a5a4b291",
+      "portfolio": "https://shatadruterminalportfolio.vercel.app/"
+    }
+  },
+  {
+    "id": "AP24110011106",
+    "idNumber": "AP24110011106",
+    "name": "Anurag Tummapudi",
+    "image": "https://drive.google.com/open?id=1QWnzb9dHun6YFqmMGOxHms6SwjmdEdZV",
+    "role": "Member",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/AnuragTummapudi",
+      "linkedin": "https://www.linkedin.com/in/anuragtummapudi/",
+      "portfolio": "https://anuragtummapudi.in/",
+      "twitter": "https://x.com/AnuragTummapudi"
+    }
+  },
+  {
+    "id": "AP24110011183",
+    "idNumber": "AP24110011183",
+    "name": "TALARI ROSHINI",
+    "image": "https://drive.google.com/open?id=1YdaZHCaem_LTSFBfQ7z-PJLPrXLz2xdL",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/roshini2028dev",
+      "linkedin": "https://www.linkedin.com/in/roshini-talari-16646137a",
+      "instagram": "roshini_talari"
+    }
+  },
+  {
+    "id": "AP24110011172",
+    "idNumber": "AP24110011172",
+    "name": "Arun Kumar Yarlagadda",
+    "image": "https://drive.google.com/open?id=1PaVw_bf4H_pde8StenSYvnrBHpwgQ4ja",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/YARLAGADDA-ARUN-KUMAR",
+      "linkedin": "https://www.linkedin.com/in/arun-kumar-yarlagadda-4a9a09323",
+      "portfolio": "https://my-portfolio-umber-zeta-58.vercel.app/"
+    }
+  },
+  {
+    "id": "AP25110010259",
+    "idNumber": "AP25110010259",
+    "name": "Yuvraj Singh",
+    "image": "https://drive.google.com/open?id=1QU_qHCfSapbQXTd8jW6Lg9CGvoS4ZOa5",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/",
+      "linkedin": "https://www.linkedin.com/in/yuvraj-singh-aba16329b"
+    }
+  },
+  {
+    "id": "AP25110080029",
+    "idNumber": "AP25110080029",
+    "name": "CHERUKURI SHANYU SAI",
+    "image": "https://drive.google.com/open?id=1xf5oWaeULqI_IZiPZK4pq9QLiRJwI4Sx",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/shanyusai2007-hue",
+      "linkedin": "https://www.linkedin.com/in/cherukuri-shanyu-sai/",
+      "instagram": "https://www.instagram.com/shanyu_sai09/"
+    }
+  },
+  {
+    "id": "AP23110010708",
+    "idNumber": "AP23110010708",
+    "name": "Asrith Tanniru",
+    "image": "https://drive.google.com/open?id=12l58ixnDuC2qM-2qmQsnjV46fZsv6Mgs",
+    "role": "Syndicate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/asrithtanniru/",
+      "linkedin": "linkedin.com/in/asrithtanniru",
+      "portfolio": "asrithtanniru.dev",
+      "twitter": "https://x.com/asrithtanniru"
+    }
+  },
+  {
+    "id": "AP23110010258",
+    "idNumber": "AP23110010258",
+    "name": "Abhiram Vattikonda",
+    "image": "https://drive.google.com/open?id=1uxYDWBetd1-BtjJrKfA9b8-XkLIzQBs3",
+    "role": "Member",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/abhiram-vattikonda",
+      "linkedin": "https://www.linkedin.com/in/abhiram-vattikonda-1182b5291/"
+    }
+  }
+]

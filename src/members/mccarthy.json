@@ -1,0 +1,126 @@
+
+[
+  {
+    "id": "AP25110080078",
+    "idNumber": "AP25110080078",
+    "name": "Akshat Srivastava",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026870/my_photo_-_Akshat_Srivastava___AP25110080078_kp6n3m.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Akshatgitty",
+      "linkedin": "https://www.linkedin.com/in/akshatsrivastava2006/",
+      "portfolio": "https://akshatgitty.github.io/",
+      "twitter": "https://x.com/AKSHATS61264708"
+    }
+  },
+  {
+    "id": "AP24110011550",
+    "idNumber": "AP24110011550",
+    "name": "Naseer Hussain",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026884/IMG_20251116_124329_-_Naseer_Hussain_Shaik___AP24110011550_eq4hvm.jpg",
+    "role": "Member",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Naseer-010",
+      "linkedin": "https://www.linkedin.com/in/-naseer-hussain"
+    }
+  },
+  {
+    "id": "AP25110010004",
+    "idNumber": "AP25110010004",
+    "name": "Aadrit",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026871/IMG-20251211-WA0001_-_Aadrit_Y___AP25110010004_fa3itj.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Aadrit555",
+      "linkedin": "https://www.linkedin.com/in/skaoldi-ntlap",
+      "twitter": "https://x.com/Mimir_000_"
+    }
+  },
+  {
+    "id": "AP25110010550",
+    "idNumber": "AP25110010550",
+    "name": "Ayushi Mishra",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026873/IMG-20251201-WA0028_-_Ayushi_Mishra___AP25110010550_zcyyjt.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Ayushi-Mishra945124/Battle-and-Treasure-",
+      "linkedin": "https://www.linkedin.com/in/ayushi-mishra-26a0a6366?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  },
+  {
+    "id": "AP24110011381",
+    "idNumber": "AP24110011381",
+    "name": "Konapala Naga Rahul Dhruva",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026879/IMG_20260316_145253_-_Dhruva_Konapala___AP24110011381_d3ywxx.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "github.com/Dhruva-123",
+      "linkedin": "https://www.linkedin.com/in/naga-rahul-dhruva-konapala-922175351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  },
+  {
+    "id": "AP25110071229",
+    "idNumber": "AP25110071229",
+    "name": "Manya",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026870/InShot_20260213_214715716_3_-_Manya_A___AP25110071229_xr7lhi.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/manyashrivastav997",
+      "linkedin": "https://www.linkedin.com/in/manya-121237377/"
+    }
+  },
+  {
+    "id": "AP25110070707",
+    "idNumber": "AP25110070707",
+    "name": "Ojasv Kushwah",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026881/IMG_20260215_012335233_-_Ojasv_Kushwah___AP25110070707_gettyj.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Ojasvvv/",
+      "linkedin": "https://www.linkedin.com/in/ojasvv?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  },
+  {
+    "id": "AP25110010048",
+    "idNumber": "AP25110010048",
+    "name": "Aadit Bansal",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026373/20250623_155023_-_Aadit_Bansal___AP25110010048_ea4yz2.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Aaditthesmart",
+      "linkedin": "https://linkedin.com/in/aaditbansal"
+    }
+  },
+  {
+    "id": "AP23110010419",
+    "idNumber": "AP23110010419",
+    "name": "Damineni Hemanth Satya Veer",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026888/IMG_6676_-_Prince_Kumar_Yadav___AP25110030026_rjyxsf.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Hemanthdamineni",
+      "linkedin": "https://www.linkedin.com/in/hemanth-damineni/"
+    }
+  },
+  {
+    "id": "AP25110010070",
+    "idNumber": "AP25110010070",
+    "name": "Sanhik Nandi",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026881/IMG_20251231_131346_-_Sanhik_Nandi___AP25110010070_xludgi.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Sanhik-2",
+      "linkedin": "https://www.linkedin.com/in/sanhik-nandi-7963011b4?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  }
+]

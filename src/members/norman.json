@@ -19,7 +19,7 @@
     "id": "AP23110010732",
     "idNumber": "AP23110010732",
     "name": "Shatadru Mukhopadhyay",
-    "image": "https://drive.google.com/open?id=1iM-dF-irnl-WoAD1t0IPia3VgJ-DvXAu",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774028063/286b3809-3b9a-46b7-8a42-715b420de45f.png",
     "role": "Syndicate",
     "lab": "Norman",
     "socialLinks": {
@@ -72,7 +72,7 @@
     "id": "AP25110010259",
     "idNumber": "AP25110010259",
     "name": "Yuvraj Singh",
-    "image": "https://drive.google.com/open?id=1QU_qHCfSapbQXTd8jW6Lg9CGvoS4ZOa5",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026761/20260220_215107_-_Yuvraj_Singh_AP25110010259_zlusoq.jpg",
     "role": "Associate",
     "lab": "Norman",
     "socialLinks": {
@@ -117,6 +117,83 @@
     "socialLinks": {
       "github": "https://github.com/abhiram-vattikonda",
       "linkedin": "https://www.linkedin.com/in/abhiram-vattikonda-1182b5291/"
+    }
+  },
+  {
+    "id": "AP24110010986",
+    "idNumber": "AP24110010986",
+    "name": "Rohit Chintalapudi",
+    "image": "https://drive.google.com/open?id=1iIu8UWX3v2-RYLF1SfB2FDkDdtumGjhs",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/RohitChintalapudi",
+      "linkedin": "https://www.linkedin.com/in/rohit-chintalapudi-5454ba36a/",
+      "portfolio": "https://devconnect-kappa-five.vercel.app/"
+    }
+  },
+  
+  {
+    "id": "AP25110130028",
+    "idNumber": "AP25110130028",
+    "name": "Manoj Inturi",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026865/Screenshot_2025-09-03-14-25-03-358-edit_com.whatsapp_-_Manoj_Inturi__AP25110130028_ncjrsg.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/Manoj-Inturi",
+      "linkedin": "https://www.linkedin.com/in/manoj-inturi-87949339b/"
+    }
+  },
+  {
+    "id": "AP22110011050",
+    "idNumber": "AP22110011050",
+    "name": "Aditya Chandra",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026874/IMG-20250308-WA0004_-_aditya_chandra___AP22110011050_sgw5gj.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/adityachandra512",
+      "linkedin": "https://www.linkedin.com/aditya-ch",
+      "portfolio": "adityachport.tech"
+    }
+  },
+  {
+    "id": "AP24110010335",
+    "idNumber": "AP24110010335",
+    "name": "Alok Raj",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026888/DSC_9302_2_-_Alok_Raj___AP24110010335_chbtoi.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/alokmuskan",
+      "linkedin": "https://www.linkedin.com/in/alokraj06",
+      "portfolio": "https://alokraj.me/",
+      "twitter": "https://x.com/alok_raj_06"
+    }
+  },
+  {
+    "id": "AP23110011195",
+    "idNumber": "AP23110011195",
+    "name": "Vissamsetty Lakshmi Nikitha",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026884/IMG_20250707_211639427_HDR_PORTRAIT_-_lakshmi_nikitha_vissamsetty___AP23110011195_ltc9en.jpg",
+    "role": "Member",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/nikitha776",
+      "linkedin": "https://www.linkedin.com/in/nikitha-vissamsetty-61909627a/"
+    }
+  },
+  {
+    "id": "AP25110130099",
+    "idNumber": "AP25110130099",
+    "name": "Ravuri Uma Manvitha",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026870/Snapchat-1244997473_-_Uma_Manvitha_Ravuri___AP25110130099_tvdyid.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/manvitharavuris145-sys",
+      "linkedin": "https://www.linkedin.com/in/uma-manvitha-ravuri-53a096382/"
     }
   }
 ]

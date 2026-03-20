@@ -1,0 +1,118 @@
+
+[
+  {
+    "id": "AP24110010470",
+    "idNumber": "AP24110010470",
+    "name": "Satwik Gupta",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026887/IMG_20250308_170113065_HDR_AE_-_Satwik_Gupta___AP24110010470_oi2raj.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "github.com/satwikgupta05",
+      "linkedin": "www.linkedin.com/in/satwikgupta05"
+    }
+  },
+  {
+    "id": "AP25110100014",
+    "idNumber": "AP25110100014",
+    "name": "Hardik Chaurasia",
+    "image": "https://drive.google.com/open?id=1FLwG2GtB_VOnvDAvPRSiBsdt_dHTWM8Y",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "hhhardik07 https://share.google/FB1dKEE5kqjXIxIhG",
+      "linkedin": "https://www.linkedin.com/in/hardik-chaurasia-84b9163b2?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  },
+  {
+    "id": "AP25110090019",
+    "idNumber": "AP25110090019",
+    "name": "P. Bharath Varma",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026883/IMG_20251017_121109_-_Bharath_Varma_Penumatsa___AP25110090019_bigc2g.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/NotPro955",
+      "linkedin": "https://www.linkedin.com/in/bharath-varma-6077b637b/"
+    }
+  },
+  {
+    "id": "AP25110010073",
+    "idNumber": "AP25110010073",
+    "name": "Kartikey Juyal",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026375/-pgcoy1_-_Kartikey_Juyal___AP25110010073_iyexcv.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/kartikeywastaken",
+      "linkedin": "https://linkedin.com/in/kartikeywastaken",
+      "portfolio": "https://v0id.in"
+    }
+  },
+  {
+    "id": "AP25122230022",
+    "idNumber": "AP25122230022",
+    "name": "Lakshaya Sharma",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026879/IMG_20260222_154101_-_Lakshaya_Sharma___AP25122230022_jxenfp.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/LangerSword",
+      "linkedin": "https://www.linkedin.com/in/langersword/"
+    }
+  },
+  {
+    "id": "AP23110011131",
+    "idNumber": "AP23110011131",
+    "name": "Ayush Dutta",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026867/OJBgRXk_-_dutta_ayush___AP23110011131_dk3yf5.png",
+    "role": "Syndicate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/spirizeon",
+      "linkedin": "https://linkedin.com/in/ayushduttasrmap",
+      "portfolio": "https://berzi.one",
+      "twitter": "https://x.com/berzelion"
+    }
+  },
+  {
+    "id": "AP24110011046",
+    "idNumber": "AP24110011046",
+    "name": "Rohan Kumar Mohanta",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026824/36756337-4179-4de3-8fef-e8314985e403_-_Rohan_Mohanta___AP24110011046_ori1tn.jpg",
+    "role": "Interim Board",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/lviffy",
+      "linkedin": "https://www.linkedin.com/in/rohan-mohanta",
+      "portfolio": "https://rohanm.in",
+      "twitter": "https://x.com/rohan_builds"
+    }
+  },
+  {
+    "id": "AP25110070337",
+    "idNumber": "AP25110070337",
+    "name": "Aakriti Gupta",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026863/WhatsApp_Image_2026-02-22_at_22.00.34_-_Aakriti_Gupta_Gupta___AP25110070337_yesabq.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/arcane-alchemist",
+      "linkedin": "https://www.linkedin.com/in/aakritigupta06/",
+      "twitter": "https://x.com/GuptaAakri79392"
+    }
+  },
+  {
+    "id": "AP24110010425",
+    "idNumber": "AP24110010425",
+    "name": "Shivangi Sharma",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026865/WhatsApp_Image_2025-09-06_at_22.04.13_-_Shivangi_Sharma___AP24110010425_akxw5c.jpg",
+    "role": "Member",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/Shivangi-Sharma06",
+      "linkedin": "https://www.linkedin.com/in/shivangi-sharma-450a7222b/?skipRedirect=true",
+      "twitter": "https://x.com/shivangi1181"
+    }
+  }
+]

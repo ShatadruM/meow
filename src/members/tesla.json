@@ -1,0 +1,64 @@
+
+[
+  {
+    "id": "Ap25110030026",
+    "idNumber": "Ap25110030026",
+    "name": "Prince kumar yadav",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026888/IMG_6676_-_Prince_Kumar_Yadav___AP25110030026_rjyxsf.jpg",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/princeyadav31",
+      "linkedin": "https://www.linkedin.com/in/prince-yadav-6357b8380?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  },
+  {
+    "id": "AP25110020257",
+    "idNumber": "AP25110020257",
+    "name": "Kapu Hari Sree",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026865/Screenshot_2026-02-22_154853_-_Hari_Sree_Kapu___AP25110020257_yilyh7.png",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/harisreekapu-pixel",
+      "linkedin": "https://www.linkedin.com/in/kapu-hari-sree-318726382"
+    }
+  },
+  {
+    "id": "AP25110070924",
+    "idNumber": "AP25110070924",
+    "name": "Venkata Abhiram Jammula",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026870/Photo_9_2_-_Venkata_Abhiram_Jammula___AP25110070924_qbiuxp.png",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/venkataabhiramj-gif",
+      "linkedin": "https://www.linkedin.com/in/venkata-abhiram-jammula-5a447b366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  },
+  {
+    "id": "AP23110020045",
+    "idNumber": "AP23110020045",
+    "name": "Parnavo Pal",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026879/IMG_20260202_223622_-_parnavo_pal___AP23110020045_lgfgdh.png",
+    "role": "Member",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/PECHKUS",
+      "linkedin": "https://www.linkedin.com/in/parnavopalsrmap/"
+    }
+  },
+  {
+    "id": "AP25110040014",
+    "idNumber": "AP25110040014",
+    "name": "Aayush Bansal",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026875/IMG_20260320_221329_-_Aayush_Bansal___AP25110040014_ndzi06.jpg",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/Aayush-Bansal07",
+      "linkedin": "https://www.linkedin.com/in/aayush-bansal-03ab75308/",
+      "portfolio": "https://aayushbansal.vercel.app/"
+    }
+  }
+]

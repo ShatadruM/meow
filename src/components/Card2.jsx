@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 
 const labColors = {
-  norman: '#ffffff',   
-  mccarthy: '#ffffff', 
-  pausch: '#ffffff',   
-  tesla: '#ffffff',    
-  satoshi: '#ffffff',  
+  norman: '#f25a42',   
+  mccarthy: '#1c55f1', 
+  pausch: '#a146e7',   
+  tesla: '#39ff14',    
+  satoshi: '#f7562b',  
   default: '#ffffff',  
 };
 
@@ -106,14 +106,14 @@ const Card2 = ({ data }) => {
         ref={cardRef}
         className="absolute inset-0 flex flex-col bg-white overflow-hidden shadow-lg z-10"
         style={{
-          border: '1px solid #ffffff', 
+          border: `1px solid ${themeColor}`, 
           borderRadius: 0, 
         }}
       >
         {/* Top: Image Section */}
         <div className="flex-grow bg-gray-200 overflow-hidden">
           <img
-            src="/photo.png"
+            src={data.image}
             alt={data.name}
             className="w-full h-full object-cover"
           />

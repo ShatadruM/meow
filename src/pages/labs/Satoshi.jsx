@@ -1,13 +1,13 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Data from "../../members/pausch.json";
 import { useLenis } from "../../hooks/useLenis"; 
 import Card2 from '../../components/Card2';
+import Data from "../../members/satoshi.json";
 
-const Pausch = () => {
+const Satoshi = () => {
   useLenis();
   const containerRef = useRef(null);
-   // Group members dynamically based on your JSON roles
+
   const teamGroups = [
     {
       title: "SYNDICATES",
@@ -27,7 +27,7 @@ const Pausch = () => {
   <>
    {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
    <div className='h-auto'>
-    <div ref={containerRef} className="relative w-full h-screen bg-[#1a0545] overflow-hidden flex flex-col">
+    <div ref={containerRef} className="relative w-full h-screen bg-[#f7562b] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
                       flex-col md:flex-row 
                       justify-center items-center md:justify-between 
@@ -35,9 +35,9 @@ const Pausch = () => {
         
         {/* LEFT TEXT "BEND REALITY" */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
-          <h1 className="font-bebas text-[25vw] md:text-[13vw] leading-[0.85] text-[#a146e7]">
+          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1a0088]">
             BEND<br/>
-            <span className="text-[#a146e7]">REALITY</span>
+            <span className="text-[#1a0088]">REALITY</span>
           </h1>
         </div>
 
@@ -46,7 +46,7 @@ const Pausch = () => {
         <div className="center-image relative md:absolute 
                         md:left-1/2 md:-translate-x-1/2 
                         md:top-1/2 md:-translate-y-1/2 
-                        h-[33vh] md:h-[70%] 
+                        h-[30vh] md:h-[70%] 
                         w-full md:w-auto transition-all duration-500 z-0
                         my-8 md:my-0 flex justify-center items-center">
           
@@ -57,7 +57,7 @@ const Pausch = () => {
           />
           
           <div 
-            className="absolute inset-0 bg-[#a146e7]"
+            className="absolute inset-0 bg-[#1a0088]"
             style={{
               mask: 'url(/ntl-text.svg) no-repeat center center / contain',
               WebkitMask: 'url(/ntl-text.svg) no-repeat center center / contain',
@@ -67,9 +67,9 @@ const Pausch = () => {
 
         {/* RIGHT TEXT "BUILD PLAY" */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
-          <h1 className="font-bebas text-[25vw] md:text-[13vw] leading-[0.85] text-[#a146e7]">
+          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1a0088]">
             BUILD<br/>
-            <span className="text-[#a146e7]">PLAY</span>
+            <span className="text-[#1a0088]">PLAY</span>
           </h1>
         </div>
 
@@ -80,9 +80,9 @@ const Pausch = () => {
       <div className="top-text absolute top-8 md:top-32 left-1/2 -translate-x-1/2 z-20">
         <a 
           href="#" 
-          className="text-[#a146e7] font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase relative z-10 underline underline-offset-5 decoration-1"
+          className="text-[#1a0088] font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase relative z-10 underline underline-offset-5 decoration-1"
         >
-          [Pausch Lab]
+          [Satoshi Lab]
         </a>
       </div>
 
@@ -135,7 +135,7 @@ const Pausch = () => {
       
     </section>
 
-    <div className="w-full bg-black text-[#a146e7]">
+     <div className="w-full bg-black ">
         <TiltedMarquee />
     </div>
 
@@ -210,10 +210,10 @@ const TiltedMarquee = () => {
           // Removed the translate class from here so GSAP has full control
           className="flex whitespace-nowrap will-change-transform w-max"
         >
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#a146e7] px-4">
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#f7562b] px-4">
             {text} {text}
           </span>
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#a146e7] px-4">
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#f7562b] px-4">
             {text} {text}
           </span>
         </div>
@@ -223,4 +223,4 @@ const TiltedMarquee = () => {
   );
 };
 
-export default Pausch;
+export default Satoshi;

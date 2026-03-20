@@ -9,7 +9,9 @@ import './App.css';
 import Images from './pages/Images';
 import Norman from './pages/labs/Norman';
 import Pausch from './pages/labs/Pausch';
-import Maccarthy from './pages/labs/Maccarthy';
+import Mccarthy from './pages/labs/Mccarthy';
+import Satoshi from './pages/labs/Satoshi';
+import Tesla from './pages/labs/Tesla';
 import Card from './components/Card';
 import TestPage from './pages/TestPage';
 
@@ -27,7 +29,9 @@ function App() {
           <Route path="/gallery" element={<Images />} />
            <Route path="/labs/norman" element={<Norman />} />
            <Route path="/labs/pausch" element={<Pausch />} />
-           <Route path="/labs/maccarthy" element={<Maccarthy />} />
+           <Route path="/labs/mccarthy" element={<Mccarthy />} />
+            <Route path="/labs/satoshi" element={<Satoshi />} />  
+            <Route path="/labs/tesla" element={<Tesla />} />
            <Route path="/test" element={<Card />} />
            <Route 
   path="/card" 

@@ -17,7 +17,7 @@ const Home = () => {
           playsInline
           className="absolute min-w-full min-h-full w-auto h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover scale-100"
         >
-          <source src="/video-bg.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dib8gimwq/video/upload/so_0,f_auto,q_auto/v1774194196/video-bg_sih5y7.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -48,7 +48,7 @@ const Home = () => {
        
 
         <ParallaxSection
-          imageSrc="/image11.png"
+          imageSrc="https://res.cloudinary.com/dib8gimwq/image/upload/so_0,f_auto,q_auto/v1774194104/image11_qzro5w.png"
           title={
             <>
               WE INNOVATE. WE CRAFT. <br />
@@ -64,7 +64,7 @@ const Home = () => {
         {/* PAGE 4: Second Parallax Section */}
 
         <ParallaxSection
-          imageSrc="/image22.png"
+          imageSrc="https://res.cloudinary.com/dib8gimwq/image/upload/so_0,f_auto,q_auto/v1774194110/image22_govsu2.png"
           title={
             <>
               STYLISH. <br />
@@ -77,7 +77,7 @@ const Home = () => {
           linkUrl="/labs"
         />
         <ParallaxSection
-          imageSrc="/image33.png"
+          imageSrc="https://res.cloudinary.com/dib8gimwq/image/upload/so_0,f_auto,q_auto/v1774194111/image33_ikjbku.png"
           title={
             <>
               WE ARE NOT A CULT. <br />

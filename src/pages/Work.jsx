@@ -60,13 +60,13 @@ const Work = () => {
           <AnimatedHeading 
             text="FEATURED" 
             as="h1" 
-            className="font-bebas text-[14vw] md:text-[11rem] leading-none text-[#1A1A1A]"
+            className="font-bebas text-[14vw] md:text-[15rem] leading-none text-[#1A1A1A]"
             delay={0}
           />
           <AnimatedHeading 
             text="PROJECTS" 
             as="h1" 
-            className="font-bebas text-[14vw] md:text-[11rem] leading-none text-[#1A1A1A] md:justify-end"
+            className="font-bebas text-[14vw] md:text-[15rem] leading-none text-[#1A1A1A] md:justify-end"
             delay={0.2}
           />
         </div>

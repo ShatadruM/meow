@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
+import AnimatedHeading from "../animations/AnimatedHeading";
+import FadeDropIn from "../animations/FadeDropIn";
 import { useLenis } from "../hooks/useLenis";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -89,39 +91,47 @@ const Info = () => {
           }}
         />
 
-        <div
-          ref={textRef}
-          className="relative z-10 flex h-screen w-full 
-                     items-end justify-center pb-24      // MOBILE: Push to bottom, center horizontally, add padding
-                     md:items-center md:justify-between md:pb-0 // DESKTOP: Center vertically, split horizontally
-                     px-4 md:px-20 translate-y-32 will-change-transform"
-        >
-          {/* LEFT TEXT "IN" */}
-          {/* Mobile: 42vw (Massive, fills half width) */}
-          <h1 className="font-bebas text-[60vw] md:text-[40vw] leading-none text-yellow-50">
-            IN
-          </h1>
-          
-          {/* CENTER IMAGE */}
-          {/* Mobile: Floating at the top (top-[15%]) */}
-          {/* Desktop: Centered vertically and horizontally */}
-          <div className="absolute left-1/2 -translate-x-1/2 
-                          top-[15%] h-[30vh] 
-                          md:top-1/2 md:-translate-y-1/2 md:h-[70%] 
-                          w-auto transition-all duration-500">
-            <img
-              src="/ntl-text.png"
-              alt="NTL Text"
-              className="h-full w-auto object-contain"
-            />
-          </div>
+      <div
+  ref={textRef}
+  className="relative z-10 flex h-screen w-full 
+             items-end justify-center pb-24      
+             md:items-center md:justify-between md:pb-0 
+             px-4 md:px-20 translate-y-32 will-change-transform"
+>
+  {/* LEFT TEXT "IN" */}
+  <AnimatedHeading 
+    text="IN"
+    as="h1"
+    className="font-bebas text-[60vw] md:text-[40vw] leading-none text-yellow-50"
+    
+  />
+  
+  {/* CENTER IMAGE */}
+  {/* The absolute positioning stays on this outer div to protect your layout */}
+  <div className="absolute left-1/2 -translate-x-1/2 
+                  top-[15%] h-[30vh] 
+                  md:top-1/2 md:-translate-y-1/2 md:h-[70%] 
+                  w-auto transition-all duration-500">
+    
+    <FadeDropIn delay={0.3} className="h-full w-full flex items-center justify-center">
+      <img
+        src="/ntl-text.svg"
+        alt="NTL Text"
+        className="h-full w-auto object-contain"
+      />
+    </FadeDropIn>
 
-          {/* RIGHT TEXT "FO" */}
-          {/* Mobile: 42vw (Massive) */}
-          <h1 className="font-bebas text-[60vw] md:text-[40vw] leading-none text-yellow-50 text-right">
-            FO
-          </h1>
-        </div>
+  </div>
+
+  {/* RIGHT TEXT "FO" */}
+  <AnimatedHeading 
+    text="FO"
+    as="h1"
+    // Remember: AnimatedHeading uses flex internally, so we use justify-end instead of text-right
+    className="font-bebas text-[60vw] md:text-[40vw] leading-none text-yellow-50 justify-end"
+    delay={0.4}
+  />
+</div>
 
         
         {/* 3. SCROLLING TEXT SECTIONS */}

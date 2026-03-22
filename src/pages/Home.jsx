@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLenis } from "../hooks/useLenis";
+import AnimatedHeading from "../animations/AnimatedHeading";
 import ParallaxSection from "../components/ParallaxSection";
 
 const Home = () => {
@@ -7,9 +8,7 @@ const Home = () => {
 
   return (
     <div className="relative w-full">
-      {/* 1. THE STAGE (Fixed Background) 
-        We use z-0 here.
-      */}
+      
       <div className="fixed inset-0 z-0 w-full h-screen overflow-hidden bg-black">
         <video
           autoPlay
@@ -18,16 +17,14 @@ const Home = () => {
           playsInline
           className="absolute min-w-full min-h-full w-auto h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover scale-100"
         >
-          <source src="/vid.mp4" type="video/mp4" />
+          <source src="/video-bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* 2. THE SCROLLABLE CONTENT 
-        By making this relative and z-10, it floats ABOVE the video.
-      */}
+      
       <main className="relative z-10 w-full">
-        {/* PAGE 1: NEXT TECH LAB (Transparent Background) */}
+       
        <section className="relative h-screen w-full bg-transparent overflow-hidden">
   <div className="flex h-full flex-col items-center justify-center">
     
@@ -36,27 +33,22 @@ const Home = () => {
        2. Desktop (md): top-auto bottom-[-2.5rem] ... (Resets it to the bottom, overriding the center styles)
     */}
     <div className="absolute w-full leading-none z-0
-                    top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                    md:top-auto md:-bottom-10 md:left-0 md:translate-x-0 md:translate-y-0">
-      
-      <h1 className="font-bebas text-amber-50 tracking-tighter uppercase text-center
-                     text-[45vw] leading-[0.8]   /* Mobile: Bigger text, tighter line height */
-                     md:text-[25vw] md:leading-none md:whitespace-nowrap /* Desktop: Original size, single line */
-                     ">
-        
-      
-        <span className="block md:inline">NEXT<span className="hidden md:inline">&nbsp;</span></span>
-        <span className="block md:inline">TECH<span className="hidden md:inline">&nbsp;</span></span>
-        <span className="block md:inline">LAB</span>
-      </h1>
+                top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                md:top-auto md:-bottom-10 md:left-0 md:translate-x-0 md:translate-y-0">
+  
+  <AnimatedHeading 
+    text="NEXT TECH LAB"
+    as="h1"
+    className="font-bebas text-amber-50 tracking-tighter uppercase text-center text-[45vw] leading-[0.8] md:text-[24vw] md:leading-none md:whitespace-nowrap"
+  />
 
-    </div>
+</div>
   </div>
 </section>
        
 
         <ParallaxSection
-          imageSrc="/image1.png"
+          imageSrc="/image11.png"
           title={
             <>
               WE INNOVATE. WE CRAFT. <br />
@@ -72,7 +64,7 @@ const Home = () => {
         {/* PAGE 4: Second Parallax Section */}
 
         <ParallaxSection
-          imageSrc="/image2.png"
+          imageSrc="/image22.png"
           title={
             <>
               STYLISH. <br />
@@ -85,7 +77,7 @@ const Home = () => {
           linkUrl="/labs"
         />
         <ParallaxSection
-          imageSrc="/image3.png"
+          imageSrc="/image33.png"
           title={
             <>
               WE ARE NOT A CULT. <br />

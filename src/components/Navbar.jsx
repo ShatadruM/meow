@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { createPortal } from 'react-dom'; // <--- IMPORT THIS
+import { createPortal } from 'react-dom';
 import Location from './Location';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkText, setIsDarkText] = useState(false);
   
   const navRef = useRef(null); 
   const headerRef = useRef(null); 
@@ -23,10 +22,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const mainContent = document.querySelector('.main-content');
-    const lightSections = document.querySelectorAll('.light-section');
 
     const handleScroll = () => {
-      // LOGIC A: DELAYED FOOTER REVEAL
+      // LOGIC A: DELAYED FOOTER REVEAL (Kept exactly as you had it)
       if (mainContent && headerRef.current) {
         const rect = mainContent.getBoundingClientRect();
         const windowHeight = window.innerHeight;
@@ -40,21 +38,8 @@ const Navbar = () => {
           headerRef.current.style.transform = `translateY(0px)`;
         }
       }
-
-      // LOGIC B: COLOR SWITCHING
-      if (navRef.current) {
-        const navRect = navRef.current.getBoundingClientRect();
-        const navMiddleY = navRect.top + navRect.height / 2;
-        
-        let isOverLight = false;
-        lightSections.forEach(section => {
-          const rect = section.getBoundingClientRect();
-          if (navMiddleY >= rect.top && navMiddleY <= rect.bottom) {
-            isOverLight = true;
-          }
-        });
-        setIsDarkText(isOverLight);
-      }
+      
+      // LOGIC B IS GONE! CSS handles the colors now.
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -63,20 +48,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const textColorClass = isDarkText ? 'text-gray-900' : 'text-white';
-  const logoFilter = isDarkText ? 'invert(1)' : 'invert(0)'; 
-  const borderColorClass = isDarkText ? 'border-gray-900/40 hover:text-white hover:bg-gray-900' : 'border-white/40 hover:text-black hover:bg-white';
-
   return (
     <>
-      {/* 1. THE HEADER (Moves up/down) */}
+      {/* 1. THE HEADER */}
+      {/* ADDED: mix-blend-difference. Everything inside this will invert! */}
       <header 
         ref={headerRef}
-        className="fixed top-0 left-0 w-full h-0 z-50 pointer-events-none transition-transform duration-75 ease-out"
+        className="fixed top-0 left-0 w-full h-0 z-50 pointer-events-none transition-transform duration-75 ease-out mix-blend-difference"
       >
         <nav 
           ref={navRef}
-          className={`w-full bg-transparent px-6 py-6 font-nunito transition-colors duration-300 pointer-events-auto ${textColorClass}`}
+          // ADDED: text-white. (Mix-blend-difference needs the base color to be pure white to invert to pure black)
+          className="w-full bg-transparent px-6 py-6 font-nunito pointer-events-auto text-white"
         >
           <div className="max-w-450 mx-auto flex justify-between items-center md:grid md:grid-cols-3">
             
@@ -91,11 +74,11 @@ const Navbar = () => {
               </div>
 
               <a href="/" className="md:hidden block">
+                {/* REMOVED: Invert style tag */}
                 <img 
                   className="h-10 sm:h-12 transition-all duration-300" 
                   src="/NTLlogo.png" 
                   alt="logo" 
-                  style={{ filter: logoFilter }}
                 />
               </a>
             </div>
@@ -103,11 +86,11 @@ const Navbar = () => {
             {/* CENTER SECTION */}
             <div className="hidden md:flex justify-center">
               <a href="/">
+                {/* REMOVED: Invert style tag */}
                 <img 
                   className="h-16 transition-all duration-300"
                   src="/NTLlogo.png" 
                   alt="logo" 
-                  style={{ filter: logoFilter }}
                 />
               </a>
             </div>
@@ -119,7 +102,8 @@ const Navbar = () => {
               </div>
               <button 
                 onClick={() => setIsOpen(true)}
-                className={`md:hidden text-[11px] uppercase tracking-widest border px-3 py-1 transition-all ${borderColorClass}`}
+                // Updated border and hover effects to rely on the white base
+                className="md:hidden text-[11px] uppercase tracking-widest border border-white/40 px-3 py-1 hover:bg-white hover:text-black transition-all"
               >
                 Menu
               </button>
@@ -128,12 +112,11 @@ const Navbar = () => {
         </nav>
       </header>
 
-      {/* 2. MOBILE MENU OVERLAY (Rendered outside via Portal) */}
+      {/* 2. MOBILE MENU OVERLAY (Unchanged) */}
       {isOpen && createPortal(
         <div className="fixed inset-0 bg-black z-[100] flex flex-col text-white animate-fade-in">
           
-          {/* Header Area within Overlay */}
-          <div className="flex justify-between items-center px-6 py-6 pt-8"> {/* Added pt-8 to match navbar position */}
+          <div className="flex justify-between items-center px-6 py-6 pt-8"> 
              <img className='h-10 sm:h-12' src="/NTLlogo.png" alt="logo" />
              <button 
                onClick={() => setIsOpen(false)}
@@ -143,9 +126,8 @@ const Navbar = () => {
              </button>
           </div>
 
-          {/* Links */}
           <div className="grow flex flex-col items-center justify-center space-y-8">
-             {['Work', 'Labs', 'Images', 'Info'].map((item) => (
+             {['Work', 'Labs', 'Gallery', 'Info'].map((item) => (
                 <a 
                   key={item}
                   href={`/${item.toLowerCase()}`} 
@@ -157,12 +139,11 @@ const Navbar = () => {
              ))}
           </div>
 
-          {/* Location */}
           <div className="absolute bottom-6 right-6 text-[10px] uppercase tracking-[0.2em] text-white">
              <Location />
           </div>
         </div>,
-        document.body // This renders the div into the <body> tag directly
+        document.body 
       )}
     </>
   );

@@ -4,7 +4,9 @@ import gsap from 'gsap';
 const trailImages = [
   "/image1.png", 
   "/image2.png", 
-  "/image3.png"
+  "/image3.png",
+  "/image4.png",
+  "/image5.png",
 ];
 
 const ImageTrail = ({ targetNode }) => {

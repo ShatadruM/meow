@@ -68,41 +68,40 @@ const Labs = () => {
 </div>
 </div>
 
-      {/* --- VIDEO STACKING SECTIONS --- */}
-      {/* These will naturally stack on top of the Hero and each other */}
+
       
       <VideoParallaxSection 
         videoSrc="/Norman-vid.mp4" 
         title="NORMAN LAB"
-        description="Pushing the boundaries of machine learning and neural networks to solve complex problems in real-time environments."
+        description="Pushing the boundaries of Design and Development to solve complex problems in real-time environments."
         linkUrl="/labs/norman"
       />
 
       <VideoParallaxSection 
         videoSrc="/mccarthy-vid.mp4"
         title="MCCARTHY LAB"
-        description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
+        description="Building high-performance ML pipelines and NLP systems to unlock deep contextual understanding and drive data-centric decision-making."
         linkUrl="/labs/mccarthy"
       />
 
       <VideoParallaxSection 
         videoSrc="/pausch-vid.mp4"
         title="PAUSCH LAB"
-        description="Connecting the physical and digital worlds through smart sensors and automated mesh networks."
+        description="Connecting the physical and digital worlds through AR and VR technology."
         linkUrl="/labs/pausch"
       />
 
       <VideoParallaxSection 
         videoSrc="/videos/arvr.mp4"
         title="TESLA LAB"
-        description="Crafting immersive AR and VR experiences that redefine how humans interact with digital information."
+        description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
         linkUrl="/labs/tesla"
       />
 
       <VideoParallaxSection 
         videoSrc="/satoshi-vid.mp4"
         title="SATOSHI LAB"
-        description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
+        description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
         linkUrl="/labs/satoshi"
       />
     </div>

@@ -8,10 +8,12 @@ import FadeDropIn from '../animations/FadeDropIn';
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { id: 1, title: "CORTEX", category: "ERP", src: "/image1.png" },
-  { id: 2, title: "HUSH", category: "APP", src: "/image2.png" },
-  { id: 3, title: "ROBO", category: "IOT", src: "/image3.png" },
-  { id: 4, title: "HACKER", category: "SEC", src: "/image1.png" },
+  { id: 1, title: "CORTEX", category: "ERP", src: "/project1.png" },
+  { id: 2, title: "HUSH", category: "APP", src: "/project2.png" },
+  { id: 3, title: "NexI", category: "IOT", src: "/project3.jpg" },
+  { id: 4, title: "BlockOps", category: "BLOCKCHAIN", src: "/project4.png" },
+  { id: 5, title: "Igris", category: "SEC", src: "/project5.png" },
+  { id: 6, title: "BE4TS", category: "GAME", src: "/project6.png" },
 ];
 
 const Work = () => {

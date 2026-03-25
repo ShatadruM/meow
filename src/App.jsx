@@ -14,10 +14,20 @@ import Satoshi from './pages/labs/Satoshi';
 import Tesla from './pages/labs/Tesla';
 import Card from './components/Card';
 import TestPage from './pages/TestPage';
+import Noise from './animations/noise';
 
 function App() {
  return (
     <Router>
+      <div className="fixed inset-0 z-50 pointer-events-none">
+         <Noise
+    patternSize={400}
+    patternScaleX={6}
+    patternScaleY={6}
+    patternRefreshInterval={2}
+    patternAlpha={19}
+  />
+      </div>
        <Navbar />
       <div className="main-content relative z-10 bg-white shadow-2xl">
         

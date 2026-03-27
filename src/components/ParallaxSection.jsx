@@ -65,7 +65,7 @@ const ParallaxSection = ({ imageSrc, title, linkText, linkUrl, enableTrail = fal
         className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
         style={{ transform: `translateY(${textMove}px)` }}
       >
-        <h2 className="font-bebas text-5xl md:text-8xl text-white tracking-tighter uppercase leading-none">
+        <h2 data-cursor="hover" className="font-bebas text-5xl md:text-8xl text-white tracking-tighter uppercase leading-none">
           {title}
         </h2>
 
@@ -74,7 +74,7 @@ const ParallaxSection = ({ imageSrc, title, linkText, linkUrl, enableTrail = fal
             href={linkUrl} 
             className="mt-12 font-nunito text-lg md:text-xl text-amber-50"
             >
-            <span className="relative z-10 underline underline-offset-8 decoration-1">
+            <span data-cursor="hover" className="relative z-10 underline underline-offset-8 decoration-1">
                 {linkText}
             </span>
             </a>

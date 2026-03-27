@@ -15,11 +15,13 @@ import Tesla from './pages/labs/Tesla';
 import Card from './components/Card';
 import TestPage from './pages/TestPage';
 import Noise from './animations/Noise';
+import CustomCursor from './components/Cursor';
 
 function App() {
  return (
     <Router>
-      <div className="fixed inset-0 z-50 pointer-events-none">
+      <CustomCursor />
+      <div className="fixed inset-0 z-20 pointer-events-none">
          <Noise
     patternSize={400}
     patternScaleX={6}
@@ -28,7 +30,9 @@ function App() {
     patternAlpha={19}
   />
       </div>
-       <Navbar />
+       <div className="relative z-30">
+    <Navbar />
+  </div>
       <div className="main-content relative z-10 bg-white shadow-2xl">
         
         <Routes>

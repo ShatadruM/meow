@@ -5,10 +5,10 @@ const Coordinates = () => {
   const lng = 80.507542;
 
   // I updated this URL to actually point to the coordinates
-  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+  const mapUrl = `https://maps.app.goo.gl/DQrg2s9ZvzBpZrGV8?g_st=aw`;
 
   return (
-    <a 
+    <a data-cursor="hover"
       href={mapUrl}
       target="_blank" 
       rel="noopener noreferrer"

@@ -90,7 +90,7 @@ const Pausch = () => {
     
     <section className="relative w-full bg-black text-white flex flex-col md:flex-row">
       
-      <div className="md:w-2/3 md:sticky md:top-0 h-auto md:h-screen flex flex-col md:flex-row px-6 md:px-12 pt-20 pb-4 md:pb-10">
+      <div className="md:w-2/3 md:sticky md:top-10 h-auto md:h-screen flex flex-col md:flex-row px-6 md:px-12 pt-20 pb-4 md:pb-10">
         
         {/* Left Text */}
         <div className="md:w-1/3 flex justify-start items-start">
@@ -126,7 +126,7 @@ const Pausch = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug font-sans text-gray-200">
+          <p className="text-xl md:text-4xl leading-snug font-inter text-gray-200">
             Norman lab is a center of innovation, specializing on web development, app development, cloud computing, and UI/UX design. Norman's lab is dedicated to pushing the boundaries of online experiences by creating seamless and user-friendly interfaces. Our focus extends beyond typical web apps to app development, where we create creative solutions based on cutting-edge technologies and best practices.
           </p>
         </div>

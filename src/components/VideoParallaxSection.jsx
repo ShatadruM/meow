@@ -63,7 +63,7 @@ const VideoParallaxSection = ({ videoSrc, title, description, linkUrl }) => {
           {title}
         </h2>
         
-        <p className="font-nunito text-lg md:text-xl text-yellow-50 max-w-xl mb-10 leading-relaxed">
+        <p data-cursor="hover" className="font-nunito text-lg md:text-xl text-yellow-50 max-w-xl mb-10 leading-relaxed">
           {description}
         </p>
 

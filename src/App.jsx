@@ -14,7 +14,7 @@ import Satoshi from './pages/labs/Satoshi';
 import Tesla from './pages/labs/Tesla';
 import Card from './components/Card';
 import TestPage from './pages/TestPage';
-import Noise from './animations/noise';
+import Noise from './animations/Noise';
 
 function App() {
  return (

@@ -102,8 +102,8 @@ const Pausch = () => {
         {/* Center Image */}
         <div className="md:w-1/2 h-[45vh] md:h-full flex justify-center md:justify-start items-start mt-6 md:mt-0">
           <img
-            src="/DonNorman.png" 
-            alt="Don Norman"
+            src="/randy_pausch.webp" 
+            alt="Randy Pausch"
             className="h-full w-auto object-contain object-top grayscale"
           />
         </div>

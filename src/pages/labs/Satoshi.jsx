@@ -102,8 +102,8 @@ const Satoshi = () => {
         {/* Center Image */}
         <div className="md:w-1/2 h-[45vh] md:h-full flex justify-center md:justify-start items-start mt-6 md:mt-0">
           <img
-            src="/DonNorman.png" 
-            alt="Don Norman"
+            src="/satoshi-nakamoto.webp" 
+            alt="Satoshi Nakamoto"
             className="h-full w-auto object-contain object-top grayscale"
           />
         </div>
@@ -199,10 +199,7 @@ const TiltedMarquee = () => {
       className="relative w-full h-[20vh] flex items-center justify-center bg-black"
       style={{ overflowX: 'clip' }}
     >
-      {/* FIXED: Added lg:translate-y-12 right here on the wrapper! 
-        This moves the entire black band down on laptops without fighting GSAP.
-        Adjust the "12" to "16" or "20" if you need it lower.
-      */}
+     
       <div className="absolute w-[200vw] rotate-10 bg-[#000000] flex select-none py-6 z-10 lg:translate-y-12">
         
         <div 

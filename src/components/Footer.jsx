@@ -21,9 +21,8 @@ const Footer = () => {
           {/* Tagline */}
           <div className="max-w-3xl">
             <h2 className="text-2xl md:text-6xl font-medium tracking-tight leading-[1.15]">
-              Got a vision? We’ve got <br />
-              caffeine and emotional <br />
-              availability.
+              Passionate about tech?<br />
+               We’ve got caffeine and emotional availability.
             </h2>
           </div>
 
@@ -69,8 +68,8 @@ const Footer = () => {
                Get in Touch
              </h3>
              <div className="flex flex-col space-y-1">
-               <a href="mailto:info@1820.com" className="text-xs md:text-lg hover:text-gray-400 truncate">
-                  info@ntl.lab
+               <a href="mailto:nexttechlab@srmap.edu.in" className="text-xs md:text-lg hover:text-gray-400 truncate">
+                  nexttechlab@srmap.edu.in
                </a>
                <a href="tel:9728697778" className="text-xs md:text-lg hover:text-gray-400">
                   +91 972 869 7778

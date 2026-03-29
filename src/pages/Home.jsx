@@ -17,7 +17,7 @@ const Home = () => {
           playsInline
           className="absolute min-w-full min-h-full w-auto h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover scale-100"
         >
-          <source src="https://res.cloudinary.com/dib8gimwq/video/upload/so_0,f_auto,q_auto/v1774194196/video-bg_sih5y7.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dib8gimwq/video/upload/v1774803094/Sequence_04_2_xwnum6.mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>

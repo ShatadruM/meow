@@ -1,5 +1,6 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { useLoading } from '../context/LoadingContext'; 
 
 const AnimatedHeading = ({ 
   text, 
@@ -9,6 +10,8 @@ const AnimatedHeading = ({
   staggerSpeed = 0.2
 }) => {
   const containerRef = useRef(null);
+  const tweenRef = useRef(null); 
+  const { isLoading } = useLoading(); 
 
   useLayoutEffect(() => {
     if (!containerRef.current) return;
@@ -16,7 +19,8 @@ const AnimatedHeading = ({
     const ctx = gsap.context(() => {
       const chars = gsap.utils.toArray('.char');
 
-      gsap.fromTo(
+     
+      tweenRef.current = gsap.fromTo(
         chars,
         {
           opacity: 0,
@@ -31,15 +35,23 @@ const AnimatedHeading = ({
           ease: "power3.out",
           delay: delay,
           stagger: {
-            each: staggerSpeed, // Changed from 'amount' to 'each'
+            each: staggerSpeed, 
             from: "start",
           },
+          paused: true, // <--- CRITICAL: Applies the opacity:0 instantly, but waits to animate
         }
       );
     }, containerRef);
 
     return () => ctx.revert(); 
   }, [text, delay, staggerSpeed]);
+
+  // 5. Watch the isLoading state and trigger play() when it turns false
+  useEffect(() => {
+    if (!isLoading && tweenRef.current) {
+      tweenRef.current.play();
+    }
+  }, [isLoading]);
 
   const words = text.split(" ");
 

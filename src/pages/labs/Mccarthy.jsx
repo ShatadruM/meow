@@ -27,7 +27,7 @@ const Mccarthy = () => {
   <>
    {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
    <div className='h-auto'>
-    <div ref={containerRef} className="relative w-full h-screen bg-[#bcbdca] overflow-hidden flex flex-col">
+    <div data-nav-color="blue" ref={containerRef} className="relative w-full h-screen bg-[#bcbdca] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
                       flex-col md:flex-row 
                       justify-center items-center md:justify-between 
@@ -88,7 +88,7 @@ const Mccarthy = () => {
 
     </div>
     
-    <section className="relative w-full bg-black text-white flex flex-col md:flex-row">
+    <section data-nav-color="white" className="relative w-full bg-black text-white flex flex-col md:flex-row">
       
       <div className="md:w-2/3 md:sticky md:top-10 h-auto md:h-screen flex flex-col md:flex-row px-6 md:px-12 pt-20 pb-4 md:pb-10">
         

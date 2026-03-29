@@ -71,28 +71,28 @@ const Labs = () => {
 
       
       <VideoParallaxSection 
-        videoSrc="/Norman-vid.mp4" 
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811575/Norman-vid_rx6jve.mp4" 
         title="NORMAN LAB"
         description="Pushing the boundaries of Design and Development to solve complex problems in real-time environments."
         linkUrl="/labs/norman"
       />
 
       <VideoParallaxSection 
-        videoSrc="/mccarthy-vid.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811547/mccarthy-vid_nr4brw.mp4"
         title="MCCARTHY LAB"
         description="Building high-performance ML pipelines and NLP systems to unlock deep contextual understanding and drive data-centric decision-making."
         linkUrl="/labs/mccarthy"
       />
 
       <VideoParallaxSection 
-        videoSrc="/pausch-vid.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811538/pausch-vid_khrnkt.mp4"
         title="PAUSCH LAB"
         description="Connecting the physical and digital worlds through AR and VR technology."
         linkUrl="/labs/pausch"
       />
 
       <VideoParallaxSection 
-        videoSrc="/videos/arvr.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811430/Nikola_Tesla_qwkdwq.mp4"
         title="TESLA LAB"
         description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
         linkUrl="/labs/tesla"

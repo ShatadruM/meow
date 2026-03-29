@@ -3,8 +3,55 @@ import { createPortal } from "react-dom";
 import Location from "./Location";
 import { gsap } from "gsap";
 
+const THEMES = {
+  white: {
+    text: "text-white",
+  },
+  black: {
+    text: "text-black",
+  },
+  orange: {
+    text: "text-[#FF5722]",
+  },
+  green: {
+    text: "text-[#39ff14]",
+  },
+  red:{
+    text: "text-[#f25a42]"
+  },
+  blue:{
+    text: "text-[#1c55f1]"
+  },
+  orange: {
+    text: "text-[#1a0088]",
+  },
+  purple:{
+    text: " text-[#a146e7]"
+  }
+};
+
+const LogoSVG = ({ className }) => (
+  <div className={`relative inline-block ${className}`}>
+    <img src="/ntl-logo.svg" className="h-full w-auto opacity-0 block" alt="logo" />
+    <div
+      className="absolute inset-0 bg-current"
+      style={{
+        WebkitMaskImage: 'url(/ntl-logo.svg)',
+        WebkitMaskSize: 'contain',
+        WebkitMaskRepeat: 'no-repeat',
+        WebkitMaskPosition: 'center',
+        maskImage: 'url(/ntl-logo.svg)',
+        maskSize: 'contain',
+        maskRepeat: 'no-repeat',
+        maskPosition: 'center',
+      }}
+    />
+  </div>
+);
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navTheme, setNavTheme] = useState("white"); 
 
   const navRef = useRef(null);
   const headerRef = useRef(null);
@@ -12,22 +59,13 @@ const Navbar = () => {
   const handleLinkClick = () => setIsOpen(false);
 
   const handleMouseEnter = (e) => {
-    gsap.to(e.currentTarget, {
-      skewX: -12,
-      duration: 0.6,
-      ease: "power2.out",
-    });
+    gsap.to(e.currentTarget, { skewX: -12, duration: 0.6, ease: "power2.out" });
   };
 
   const handleMouseLeave = (e) => {
-    gsap.to(e.currentTarget, {
-      skewX: 0,
-      duration: 0.4,
-      ease: "power2.in",
-    });
+    gsap.to(e.currentTarget, { skewX: 0, duration: 0.4, ease: "power2.in" });
   };
 
-  // Lock body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -40,16 +78,38 @@ const Navbar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    const mainContent = document.querySelector(".main-content");
+    const sections = document.querySelectorAll("[data-nav-color]");
 
+    const observerOptions = {
+      root: null,
+      rootMargin: "-10% 0px -90% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const colorName = entry.target.getAttribute("data-nav-color");
+          if (THEMES[colorName]) {
+            setNavTheme(colorName);
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const mainContent = document.querySelector(".main-content");
     const handleScroll = () => {
-      // LOGIC A: DELAYED FOOTER REVEAL (Kept exactly as you had it)
       if (mainContent && headerRef.current) {
         const rect = mainContent.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const overlap = windowHeight - rect.bottom;
+        const overlap = window.innerHeight - rect.bottom;
         const threshold = 500;
-
         if (overlap > threshold) {
           const moveUpAmount = overlap - threshold;
           headerRef.current.style.transform = `translateY(-${moveUpAmount}px)`;
@@ -57,31 +117,26 @@ const Navbar = () => {
           headerRef.current.style.transform = `translateY(0px)`;
         }
       }
-
-      // LOGIC B IS GONE! CSS handles the colors now.
     };
-
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const activeTheme = THEMES[navTheme] || THEMES.white;
+
   return (
     <>
-      {/* 1. THE HEADER */}
-      {/* ADDED: mix-blend-difference. Everything inside this will invert! */}
       <header
         ref={headerRef}
-        className="fixed top-0 left-0 w-full h-0 z-50 pointer-events-none transition-transform duration-75 ease-out mix-blend-difference"
+        className="fixed top-0 left-0 w-full h-0 z-50 pointer-events-none transition-transform duration-75 ease-out"
       >
         <nav
           ref={navRef}
-          // ADDED: text-white. (Mix-blend-difference needs the base color to be pure white to invert to pure black)
-          className="w-full bg-transparent px-6 py-6 font-nunito pointer-events-auto text-white"
+          className={`w-full bg-transparent px-6 py-6 font-nunito pointer-events-auto transition-colors duration-500 ${activeTheme.text}`}
         >
           <div className="max-w-450 mx-auto flex justify-between items-center md:grid md:grid-cols-3">
-            {/* LEFT SECTION */}
+            
             <div className="flex items-center justify-start">
               <div className="hidden md:flex flex-col text-sm uppercase tracking-[0.2em]">
                 {["Work", "Labs", "Gallery", "Info"].map((item) => (
@@ -99,28 +154,16 @@ const Navbar = () => {
               </div>
 
               <a href="/" className="md:hidden block">
-                {/* REMOVED: Invert style tag */}
-                <img
-                  className="h-10 sm:h-12 transition-all duration-300"
-                  src="/NTLlogo.png"
-                  alt="logo"
-                />
+                 <LogoSVG className="h-10 sm:h-12" />
               </a>
             </div>
 
-            {/* CENTER SECTION */}
             <div className="hidden md:flex justify-center">
               <a href="/">
-                {/* REMOVED: Invert style tag */}
-                <img
-                  className="h-16 transition-all duration-300"
-                  src="/NTLlogo.png"
-                  alt="logo"
-                />
+                <LogoSVG className="h-16" />
               </a>
             </div>
 
-            {/* RIGHT SECTION */}
             <div className="flex items-center justify-end">
               <div
                 data-cursor="hover"
@@ -130,8 +173,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={() => setIsOpen(true)}
-                // Updated border and hover effects to rely on the white base
-                className="md:hidden text-[11px] uppercase tracking-widest border border-white/40 px-3 py-1 hover:bg-white hover:text-black transition-all"
+                className={`md:hidden text-[11px] uppercase tracking-widest border px-3 py-1 transition-all ${activeTheme.border} ${activeTheme.hoverBg} ${activeTheme.hoverText}`}
               >
                 Menu
               </button>
@@ -140,12 +182,11 @@ const Navbar = () => {
         </nav>
       </header>
 
-      {/* 2. MOBILE MENU OVERLAY (Unchanged) */}
       {isOpen &&
         createPortal(
           <div className="fixed inset-0 bg-black z-[100] flex flex-col text-white animate-fade-in">
             <div className="flex justify-between items-center px-6 py-6 pt-8">
-              <img className="h-10 sm:h-12" src="/NTLlogo.png" alt="logo" />
+              <LogoSVG className="h-10 sm:h-12 text-white" />
               <button
                 onClick={() => setIsOpen(false)}
                 className="text-4xl font-light leading-none hover:opacity-70 transition-opacity"

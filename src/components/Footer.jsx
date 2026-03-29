@@ -78,21 +78,30 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Socials */}
-          <div className="col-span-1 flex flex-col">
-             <div className="w-full h-[1px] bg-white/30 mb-3 md:mb-6"></div>
-             <h3 className="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-2 md:mb-6">
-               Socials
-             </h3>
-             <ul className="space-y-1">
-                {["Instagram", "Twitter", "LinkedIn"].map((social, i) => (
-                   <li key={i}>
-                     <a href="#" className="text-xs md:text-lg hover:text-gray-400">
-                        {social}
-                     </a>
-                   </li>
-                ))}
-             </ul>
-          </div>
+         <div className="col-span-1 flex flex-col">
+  <div className="w-full h-[1px] bg-white/30 mb-3 md:mb-6"></div>
+  <h3 className="text-gray-500 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-2 md:mb-6">
+    Socials
+  </h3>
+  <ul className="space-y-1">
+    {[
+      { name: "Instagram", url: "https://www.instagram.com/nexttechlab_ap?igsh=Ync0eHV1Znd6NGY1" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/company/next-tech-lab-ap/" },
+      { name: "Arcane", url: "https://pub.nexttechlabap.in/" },
+    ].map((social, i) => (
+      <li key={i}>
+        <a 
+          href={social.url} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-xs md:text-lg hover:text-gray-400"
+        >
+          {social.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
 
         </div>
 

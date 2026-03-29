@@ -80,7 +80,7 @@ const Info = () => {
       className="relative w-full bg-black overflow-hidden"
     >
       {/* --- PARALLAX HERO SECTION --- */}
-      <div className="relative min-h-[250vh] w-full">
+      <div data-nav-color="white" className="relative min-h-[250vh] w-full">
         {/* 1. BACKGROUND IMAGE (Ref added) */}
         <div
           ref={bgRef}
@@ -185,7 +185,7 @@ const Info = () => {
       </div>
 
       {/* STATS SECTION (Solid Background covers the parallax image) */}
-      <section className="light-section relative z-30 w-full bg-[#EAEAE5] px-6 py-40">
+      <section data-nav-color="black" className="light-section relative z-30 w-full bg-[#EAEAE5] px-6 py-40">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
           {/* STAT 1 */}
           <div className="flex flex-col items-center text-center group">

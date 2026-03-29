@@ -29,7 +29,7 @@ const Norman = () => {
   <>
    {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
    <div className='h-auto'>
-    <div ref={containerRef} className="relative w-full h-screen bg-[#f6efae] overflow-hidden flex flex-col">
+    <div data-nav-color="red" ref={containerRef} className="relative w-full h-screen bg-[#f6efae] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
                       flex-col md:flex-row 
                       justify-center items-center md:justify-between 
@@ -37,7 +37,7 @@ const Norman = () => {
         
         {/* LEFT TEXT "BUILD BOLD" */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
-          <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#f25a42]">
+          <h1 className="font-bebas text-[#f25a42] text-[25vw] md:text-[15vw] leading-[0.85] ">
             BUILD<br/>
             <span className="text-[#f25a42]">BOLD</span>
           </h1>
@@ -88,7 +88,7 @@ const Norman = () => {
 
     </div>
     
-    <section className="relative w-full bg-black text-white flex flex-col md:flex-row">
+    <section data-nav-color="white" className="relative w-full bg-black text-white flex flex-col md:flex-row">
       
       <div className="md:w-2/3 md:sticky md:top-10 h-auto md:h-screen flex flex-col md:flex-row px-6 md:px-12 pt-20 pb-4 md:pb-10">
         
@@ -135,7 +135,7 @@ const Norman = () => {
       
     </section>
 
-    <div className="w-full bg-black">
+    <div className="w-full  bg-black">
         <TiltedMarquee />
     </div>
 
@@ -210,10 +210,10 @@ const TiltedMarquee = () => {
           // Removed the translate class from here so GSAP has full control
           className="flex whitespace-nowrap will-change-transform w-max"
         >
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-white px-4">
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercasetext-[#f25a42] px-4">
             {text} {text}
           </span>
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-white px-4">
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercasetext-[#f25a42] px-4">
             {text} {text}
           </span>
         </div>

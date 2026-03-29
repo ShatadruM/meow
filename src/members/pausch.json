@@ -112,5 +112,55 @@
       "linkedin": "https://www.linkedin.com/in/satyam-kr31",
       "portfolio": "https://satyamkr3103.github.io/Portfolio/"
     }
+  },
+  {
+    "id": "AP23110010258",
+    "idNumber": "AP23110010258",
+    "name": "Abhiram vattikonda",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788656/image_self_-_abhiram_vattikonda___AP23110010258_qarqkr.jpg",
+    "role": "Associate",
+    "lab": "Pausch",
+    "socialLinks": {
+      "github": "https://github.com/abhiram-vattikonda",
+      "linkedin": "https://www.linkedin.com/in/abhiram-vattikonda-1182b5291/"
+    }
+  },
+  {
+    "id": "AP2510070915",
+    "idNumber": "AP2510070915",
+    "name": "Rishabh Surana",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788859/IMG_20260321_034722_-_Rishabh_Surana___AP25110070915_h7op5g.jpg",
+    "role": "Associate",
+    "lab": "Pausch",
+    "socialLinks": {
+      "github": "https://github.com/surana-rishabh",
+      "linkedin": "https://www.linkedin.com/in/rishabh-surana-299716395"
+    }
+  },
+  {
+    "id": "AP25110030022",
+    "idNumber": "AP25110030022",
+    "name": "Ishaan Singh",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789226/LinkedIn_profile_picture_-_Ishaan_Singh___AP25110030022_opgu0j.jpg",
+    "role": "Associate",
+    "lab": "Pausch",
+    "socialLinks": {
+      "github": "https://github.com/ishaansingh-ai",
+      "linkedin": "https://www.linkedin.com/in/ishaan-singh-0a11113a5/",
+      "portfolio": "https://kushaqportfolio.vercel.app/"
+    }
+  },
+  {
+    "id": "AP25110030022",
+    "idNumber": "AP25110030022",
+    "name": "Daksh Kulkarni",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774790122/79302874-1405-4501-b72d-308a7d3c28b4_-_daksh_kulkarni___AP22110010696_sgeowd.jpg",
+    "role": "Syndicate",
+    "lab": "Pausch",
+    "socialLinks": {
+      "github": "https://github.com/DakshKulkarni",
+      "linkedin": "https://www.linkedin.com/in/daksh-kulkarni-425476253",
+      "portfolio": "https://dakshgamedev.netlify.app/"
+    }
   }
 ]

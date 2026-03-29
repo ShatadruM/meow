@@ -16,7 +16,7 @@
     "id": "AP25110100014",
     "idNumber": "AP25110100014",
     "name": "Hardik Chaurasia",
-    "image": "https://drive.google.com/open?id=1FLwG2GtB_VOnvDAvPRSiBsdt_dHTWM8Y",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774791886/IMG_20260317_222110_-_HARDIK_CHAURASIA___AP25110100014_m3buuw.jpg",
     "role": "Associate",
     "lab": "Satoshi",
     "socialLinks": {
@@ -113,6 +113,20 @@
       "github": "https://github.com/Shivangi-Sharma06",
       "linkedin": "https://www.linkedin.com/in/shivangi-sharma-450a7222b/?skipRedirect=true",
       "twitter": "https://x.com/shivangi1181"
+    }
+  },
+  {
+    "id": "AP24110010499",
+    "idNumber": "AP24110010499",
+    "name": "Rahul Rajith",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789881/papa_rv9ktk.jpg",
+    "role": "member",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/rubberpirate",
+      "linkedin": "https://www.linkedin.com/in/rahul-rajith/",
+      "portfolio": "https://rubberpirate.me",
+      "twitter": "https://x.com/rubberpirate0"
     }
   }
 ]

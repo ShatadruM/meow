@@ -60,5 +60,57 @@
       "linkedin": "https://www.linkedin.com/in/aayush-bansal-03ab75308/",
       "portfolio": "https://aayushbansal.vercel.app/"
     }
+  },
+  {
+    "id": "AP24110010725",
+    "idNumber": "AP24110010725",
+    "name": "Shazia Mohommed",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788975/IMG_20260317_230622_-_Shazia_Farheen_Mohommed___AP24110010725_d5am1s.jpg",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/aizahs31",
+      "linkedin": "https://linkedin.com/in/shazia-mohommed",
+      "portfolio": "https://shazia-mohommed.vercel.app/",
+      "twitter": "https://x.com/aizahs31"
+    }
+  },
+  {
+    "id": "AP23110010893",
+    "idNumber": "AP23110010893",
+    "name": "Rajat Kumar Singh",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789287/file_00000000a9147208914eac9d882f2097_-_rajat_kumar_singh___AP23110010803_g5nnck.png",
+    "role": "Syndicate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/rajatsinghten",
+      "linkedin": "https://www.linkedin.com/in/rajatsingh10",
+      "portfolio": "https://rajatsingh.in/",
+      "twitter": "https://x.com/rajatsinghten"
+    }
+  },
+  {
+    "id": "AP25110010150",
+    "idNumber": "AP25110010150",
+    "name": "Kanak Suresh Alone",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789649/Kanak_Image_-_Kanak_Suresh_Alone___AP25110010150_u9rs23.png",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/Kanak-101",
+      "linkedin": "https://www.linkedin.com/in/kanak-alone-92856b398/"
+    }
+  },
+  {
+    "id": "AP24110011237",
+    "idNumber": "AP24110011237",
+    "name": "Burra Krishna Karthikeya",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789830/IMG_8515_-_Krishna_Burra___AP24110011237_bueam4.jpg",
+    "role": "member",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/Karthikeyaburra",
+      "linkedin": "https://www.linkedin.com/in/burra-krishna-karthikeya-a34a8131b/"
+    }
   }
 ]

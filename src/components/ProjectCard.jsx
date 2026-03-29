@@ -1,9 +1,14 @@
 import React from "react";
 
-const ProjectCard = ({ src, title, category, className = "" }) => {
+const ProjectCard = ({ src, title, category, link, className = "" }) => {
   return (
     // The parent controls width/height via className
-    <div className={`w-full ${className} flex flex-col`}>
+    <a 
+      href={link} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className={`w-full ${className} flex flex-col`}
+    >
       
       {/* Image Container: flex-grow ensures it fills available space */}
       <div className="group relative w-full flex-grow overflow-hidden rounded-lg bg-gray-900">
@@ -39,7 +44,7 @@ const ProjectCard = ({ src, title, category, className = "" }) => {
           {category}
         </span>
       </div>
-    </div>
+    </a>
   );
 };
 

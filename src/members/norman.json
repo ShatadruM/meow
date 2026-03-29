@@ -4,7 +4,7 @@
     "id": "AP24110011410",
     "idNumber": "AP24110011410",
     "name": "Ghule Aniketh",
-    "image": "https://drive.google.com/open?id=1GdeKOoMQ9Y5U_XsdEgTu_sq48xhQVxbM",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774790057/Screenshot_20260222_173714_Gallery_-_Aniketh_Ghule___AP24110011410_rtkrpr.jpg",
     "role": "Associate",
     "lab": "Norman",
     "socialLinks": {
@@ -28,38 +28,13 @@
       "portfolio": "https://shatadruterminalportfolio.vercel.app/"
     }
   },
-  {
-    "id": "AP24110011106",
-    "idNumber": "AP24110011106",
-    "name": "Anurag Tummapudi",
-    "image": "https://drive.google.com/open?id=1QWnzb9dHun6YFqmMGOxHms6SwjmdEdZV",
-    "role": "Member",
-    "lab": "Norman",
-    "socialLinks": {
-      "github": "https://github.com/AnuragTummapudi",
-      "linkedin": "https://www.linkedin.com/in/anuragtummapudi/",
-      "portfolio": "https://anuragtummapudi.in/",
-      "twitter": "https://x.com/AnuragTummapudi"
-    }
-  },
-  {
-    "id": "AP24110011183",
-    "idNumber": "AP24110011183",
-    "name": "TALARI ROSHINI",
-    "image": "https://drive.google.com/open?id=1YdaZHCaem_LTSFBfQ7z-PJLPrXLz2xdL",
-    "role": "Associate",
-    "lab": "Norman",
-    "socialLinks": {
-      "github": "https://github.com/roshini2028dev",
-      "linkedin": "https://www.linkedin.com/in/roshini-talari-16646137a",
-      "instagram": "roshini_talari"
-    }
-  },
+  
+  
   {
     "id": "AP24110011172",
     "idNumber": "AP24110011172",
     "name": "Arun Kumar Yarlagadda",
-    "image": "https://drive.google.com/open?id=1PaVw_bf4H_pde8StenSYvnrBHpwgQ4ja",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774790306/IMG_20260222_234209_-_Arun_Kumar_Yarlagadda___AP24110011172_ntkmnz.jpg",
     "role": "Associate",
     "lab": "Norman",
     "socialLinks": {
@@ -84,7 +59,7 @@
     "id": "AP25110080029",
     "idNumber": "AP25110080029",
     "name": "CHERUKURI SHANYU SAI",
-    "image": "https://drive.google.com/open?id=1xf5oWaeULqI_IZiPZK4pq9QLiRJwI4Sx",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774790306/IMG_20260222_234209_-_Arun_Kumar_Yarlagadda___AP24110011172_ntkmnz.jpg",
     "role": "Associate",
     "lab": "Norman",
     "socialLinks": {
@@ -93,37 +68,13 @@
       "instagram": "https://www.instagram.com/shanyu_sai09/"
     }
   },
-  {
-    "id": "AP23110010708",
-    "idNumber": "AP23110010708",
-    "name": "Asrith Tanniru",
-    "image": "https://drive.google.com/open?id=12l58ixnDuC2qM-2qmQsnjV46fZsv6Mgs",
-    "role": "Syndicate",
-    "lab": "Norman",
-    "socialLinks": {
-      "github": "https://github.com/asrithtanniru/",
-      "linkedin": "linkedin.com/in/asrithtanniru",
-      "portfolio": "asrithtanniru.dev",
-      "twitter": "https://x.com/asrithtanniru"
-    }
-  },
-  {
-    "id": "AP23110010258",
-    "idNumber": "AP23110010258",
-    "name": "Abhiram Vattikonda",
-    "image": "https://drive.google.com/open?id=1uxYDWBetd1-BtjJrKfA9b8-XkLIzQBs3",
-    "role": "Member",
-    "lab": "Norman",
-    "socialLinks": {
-      "github": "https://github.com/abhiram-vattikonda",
-      "linkedin": "https://www.linkedin.com/in/abhiram-vattikonda-1182b5291/"
-    }
-  },
+ 
+ 
   {
     "id": "AP24110010986",
     "idNumber": "AP24110010986",
     "name": "Rohit Chintalapudi",
-    "image": "https://drive.google.com/open?id=1iIu8UWX3v2-RYLF1SfB2FDkDdtumGjhs",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774790425/IMG_2574_-_Rohit_Chintalapudi___AP24110010986_ygrqyu.jpg",
     "role": "Associate",
     "lab": "Norman",
     "socialLinks": {
@@ -194,6 +145,81 @@
     "socialLinks": {
       "github": "https://github.com/manvitharavuris145-sys",
       "linkedin": "https://www.linkedin.com/in/uma-manvitha-ravuri-53a096382/"
+    }
+  },
+  {
+    "id": "AP24110010212",
+    "idNumber": "AP24110010212",
+    "name": "J Omkareswar",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788655/PHOTO-2026-03-20-23-06-48_-_Omkar_Eswar_Jaladi___AP24110010212_hmehye.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/Omkareswar49",
+      "linkedin": "https://www.linkedin.com/in/omkareswar-j-408505308/"
+    }
+  },
+  {
+    "id": "AP24110011183",
+    "idNumber": "AP24110011183",
+    "name": "TALARI ROSHINI",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788920/IMG_20260321_081649_-_Roshini_Talari___AP24110011183_otdaf3.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/roshini2028dev",
+      "linkedin": "https://www.linkedin.com/in/roshini-talari-28r?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  },
+  {
+    "id": "AP24110011106",
+    "idNumber": "AP24110011106",
+    "name": "Anurag Tummapudi",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789101/Anurag_Tummapudi_-_Anurag_Tummapudi___AP24110011106_dczaml.jpg",
+    "role": "member",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/AnuragTummapudi",
+      "linkedin": "www.linkedin.com/in/anuragtummapudi",
+      "portfolio": "https://anuragtummapudi.in/",
+      "twitter": "https://x.com/AnuragTummapudi"
+    }
+  },
+  {
+    "id": "AP22111260054",
+    "idNumber": "AP22111260054",
+    "name": "Saikanth Gubbala",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789538/1715421766181_-_Sai_Kanth_Gubbala___AP22111260054_pif5ri.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/Saikanth-G",
+      "linkedin": "https://www.linkedin.com/in/saikanth-gubbala/"
+    }
+  },
+  {
+    "id": "AP23110010222",
+    "idNumber": "AP23110010222",
+    "name": "G Sri Krishna Abhiram",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789591/IMG-20260202-WA0005_-_sri_krishna_abhi_ram_gowravajjula___AP23110010222_nwtydt.jpg",
+    "role": "Associate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/abhiram-1115",
+      "linkedin": "https://www.linkedin.com/in/sri-krishna-abhiram"
+    }
+  },
+  {
+    "id": "AP23110010708",
+    "idNumber": "AP23110010708",
+    "name": "Asrith Tanniru",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789746/IMG_0755-01_-_yuva_sai_asrith_tanniru___AP23110010708_qe5bem.jpg",
+    "role": "Syndicate",
+    "lab": "Norman",
+    "socialLinks": {
+      "github": "https://github.com/asrithtanniru",
+      "linkedin": "linkedin.com/in/asrithtanniru",
+      "portfolio": "asrithtanniru.dev"
     }
   }
 ]

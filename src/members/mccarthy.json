@@ -103,7 +103,7 @@
     "id": "AP23110010419",
     "idNumber": "AP23110010419",
     "name": "Damineni Hemanth Satya Veer",
-    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026888/IMG_6676_-_Prince_Kumar_Yadav___AP25110030026_rjyxsf.jpg",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774026889/1001270710-Photoroom_-_hemanth_satya_veer_damineni___AP23110010419_dvq3fd.png",
     "role": "Associate",
     "lab": "McCarthy",
     "socialLinks": {
@@ -121,6 +121,70 @@
     "socialLinks": {
       "github": "https://github.com/Sanhik-2",
       "linkedin": "https://www.linkedin.com/in/sanhik-nandi-7963011b4?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  },
+  {
+    "id": "AP24110012105",
+    "idNumber": "AP24110012105",
+    "name": "Muthu Amudhan S",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774788801/Profile_-_MuthuAmudhan_S___AP24110012105_xsq1eu.png",
+    "role": "member",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/MuthuAmuthan7",
+      "linkedin": "www.linkedin.com/in/muthu-amuthan",
+      "twitter": "https://x.com/Muthu_Amuthan12"
+    }
+  },
+  {
+    "id": "AP24110011000",
+    "idNumber": "AP24110011000",
+    "name": "Gnanada Alavala",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774792117/photo_-_Gnanada_Alavala___AP24110011000_ntgxnr.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/gnana2007",
+      "linkedin": "https://www.linkedin.com/in/gnanadaalavala"
+    }
+  },
+  {
+    "id": "AP25110070008",
+    "idNumber": "AP25110070008",
+    "name": "Adarsh Kumar Pandey",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789176/Adarsh_Img_-_Adarsh_Kumar_Pandey___AP25110070008_keqbwf.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Adarsh-Pandey28/",
+      "linkedin": "https://www.linkedin.com/in/adarsh-pandey-869b46371/",
+      "portfolio": "https://adarsh-pandey28.github.io/adarsh-portfolio2/",
+      "twitter": "https://x.com/AdarshBytes7"
+    }
+  },
+  {
+    "id": "AP25110010434",
+    "idNumber": "AP25110010434",
+    "name": "Ramratan Padhy",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789482/20260225_205615_109_-_Ramratan_Padhy___AP25110010434_pptvrx.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "GitHub.com/consolelogram",
+      "linkedin": "in.linkedin.com/in/ramratan-ntlap"
+    }
+  },
+  {
+    "id": "AP23110011209",
+    "idNumber": "AP23110011209",
+    "name": "Aaryan Regmi",
+    "image": "https://res.cloudinary.com/dib8gimwq/image/upload/v1774789699/profile_-_regmi_aaryan___AP23110011209_hdl8ln.png",
+    "role": "Syndicate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/Aaryan73",
+      "linkedin": "https://www.linkedin.com/in/aaryan-regmi-098872196/",
+      "twitter": "https://x.com/aaryanreegmi"
     }
   }
 ]

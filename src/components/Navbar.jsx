@@ -10,9 +10,6 @@ const THEMES = {
   black: {
     text: "text-black",
   },
-  orange: {
-    text: "text-[#FF5722]",
-  },
   green: {
     text: "text-[#39ff14]",
   },

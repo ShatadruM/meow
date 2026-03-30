@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectCard from "../components/ProjectCard";
 import AnimatedHeading from "../animations/AnimatedHeading";
 import FadeDropIn from "../animations/FadeDropIn";
-import projects from "../projects/projects.json"; // <-- Imported the JSON file here
+import projects from "../projects/projects.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,10 +35,8 @@ const Work = () => {
 
   return (
     <section ref={containerRef} className="relative w-full bg-[#EAEAE5]">
-      {/* --- LAYER 1: HERO BACKGROUND --- */}
-      {/* Changed to "relative md:sticky" -> Scrolls normally on mobile, pins on desktop */}
+      
       <div className="relative md:sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* TEXT LAYER */}
         {/* Mobile: Anchored to bottom, centered with gap. Desktop: Centered vertically, spread apart */}
         <div
           ref={textRef}
@@ -58,9 +56,7 @@ const Work = () => {
             delay={0.2}
           />
         </div>
-        {/* CENTER IMAGE LAYER */}
-        {/* Mobile: Pushed up slightly and made larger. Desktop: Centered and standard size */}
-        <div
+         <div
           className="absolute z-0 flex items-center justify-center pointer-events-none 
                          top-[15%] h-[50vh] md:top-auto md:h-[60%] w-auto"
         >
@@ -74,10 +70,9 @@ const Work = () => {
         </div>
       </div>
 
-      {/* --- LAYER 2: THE PROJECTS GRID --- */}
+    {/*project grid*/}
       <div className="relative z-20 w-full pb-40">
         <div className="container mx-auto px-4 md:px-10">
-          {/* Added pt-10 md:pt-0 so the grid has breathing room below the mobile text */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-32 gap-y-20 w-full pt-10 md:pt-0">
             {projects.map((p) => (
               <div key={p.id} className="w-[90%] md:w-[80%] mx-auto">
@@ -85,7 +80,7 @@ const Work = () => {
                   src={p.src}
                   title={p.title}
                   category={p.category}
-                  link={p.link} // Passed the link prop to match your updated ProjectCard and JSON
+                  link={p.link} 
                   className="h-[40vh] md:h-[50vh] "
                 />
               </div>

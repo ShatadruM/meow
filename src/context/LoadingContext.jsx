@@ -1,18 +1,17 @@
 import React, { createContext, useContext, useState } from 'react';
 
-// Create the context
 const LoadingContext = createContext();
 
-// Create a provider component
 export const LoadingProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
+  // NEW: Track if this is the very first time they opened the site
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   return (
-    <LoadingContext.Provider value={{ isLoading, setIsLoading }}>
+    <LoadingContext.Provider value={{ isLoading, setIsLoading, isInitialLoad, setIsInitialLoad }}>
       {children}
     </LoadingContext.Provider>
   );
 };
 
-// Custom hook so you don't have to import useContext everywhere
 export const useLoading = () => useContext(LoadingContext);

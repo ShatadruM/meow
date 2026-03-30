@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// --- 1. Reusable CountUp Component (Kept same) ---
+// CountUp Component
 const CountUp = ({ end, duration = 2000 }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -37,7 +37,7 @@ const CountUp = ({ end, duration = 2000 }) => {
   return <span ref={ref}>{count}</span>;
 };
 
-// --- 2. The Fixed Info Page ---
+
 const Info = () => {
   const containerRef = useRef(null);
   const bgRef = useRef(null);
@@ -79,9 +79,9 @@ const Info = () => {
       ref={containerRef}
       className="relative w-full bg-black overflow-hidden"
     >
-      {/* --- PARALLAX HERO SECTION --- */}
+      {/*  HERO SECTION */}
       <div data-nav-color="white" className="relative min-h-[250vh] w-full">
-        {/* 1. BACKGROUND IMAGE (Ref added) */}
+        
         <div
           ref={bgRef}
           className="absolute inset-0 z-0 opacity-80 h-full w-full will-change-transform 
@@ -104,7 +104,6 @@ const Info = () => {
           />
 
           {/* CENTER IMAGE */}
-          {/* The absolute positioning stays on this outer div to protect your layout */}
           <div
             className="absolute left-1/2 -translate-x-1/2 
                   top-[15%] h-[30vh] 
@@ -127,24 +126,28 @@ const Info = () => {
           <AnimatedHeading
             text="FO"
             as="h1"
-            // Remember: AnimatedHeading uses flex internally, so we use justify-end instead of text-right
             className="font-bebas text-[60vw] md:text-[40vw] leading-none text-yellow-50 justify-end"
             delay={0.4}
           />
         </div>
 
-        {/* 3. SCROLLING TEXT SECTIONS */}
+        {/* SCROLLING TEXT SECTIONS */}
         <section className="relative mt-60 h-screen w-full bg-transparent px-6 md:px-12 py-24 flex flex-col gap-20 justify-between z-20 pointer-events-none">
-          {/* pointer-events-none allows clicks to pass through if needed, remove if you have links here */}
-
-          <div className="w-full flex justify-start">
+           <div className="w-full flex justify-start">
             <div className="max-w-[80%] md:max-w-[70%]">
               <h2 data-cursor="hover" className="font-bebas text-6xl md:text-8xl text-white leading-[0.85] text-left tracking-tighter shadow-black drop-shadow-lg">
-                STUDENT LED{" "}
+                STUDENT{" "}
                 <span className="font-ephesis md:text-9xl text-yellow-200">
-                  Innovation
+                  Built.
                 </span>{" "}
-                LAB, <br /> TECH LAB, RESEARCH LAB
+                STUDENT{" "}
+                <span className="font-ephesis md:text-9xl text-yellow-200">
+                 Grown.
+                </span>{" "} 
+                STUDENT{" "}
+                <span className="font-ephesis md:text-9xl text-yellow-200">
+                 Governed.
+                </span>
               </h2>
             </div>
           </div>
@@ -153,38 +156,33 @@ const Info = () => {
             <div  className="max-w-[80%] md:max-w-[70%]">
               <h2  className="font-bebas text-6xl md:text-8xl text-white leading-[0.85] text-left tracking-tighter shadow-black drop-shadow-lg">
                 INDIA'S FIRST{" "}
-                <span className="font-ephesis text-yellow-200">QS Ranked </span>{" "}
-                LAB <br /> IN SRM AP UNIVERSITY LOREM IPSUM
+                <span className="font-ephesis text-yellow-200">QS Ranked </span>
+                {" "}R&D LAB <br /> BY STUDENTS.
               </h2>
             </div>
           </div>
         </section>
 
-        {/* 4. "WHY ARE WE DIFFERENT?" SECTION */}
+        {/* "WHY ARE WE DIFFERENT?" SECTION */}
         <section className="relative z-20 w-full px-6 py-32 mt-20">
           <div className="mx-auto flex w-min flex-col gap-4 md:gap-6">
-            {/* Added backdrop blur to make text readable over moving background */}
-
             <h2 data-cursor="hover" className="whitespace-nowrap text-center font-bebas text-5xl md:text-5xl leading-[0.85] tracking-tight text-yellow-50 uppercase">
               WHY ARE WE DIFFERENT?
             </h2>
 
             <p data-cursor="hover" className="font-roboto-mono text-lg md:text-sm text-gray-200 leading-relaxed text-left w-full">
-              We are not just a research lab. Next Tech Lab is a vibrant
-              ecosystem where innovation meets collaboration. Our lab goes
-              beyond traditional boundaries by hosting regular events that
-              foster learning, creativity, and community building.
+              Next Tech Lab is a proven student experiment on re-imagining education. 
+              We hustle like startups, and grow ourselves in an ecosystem of freedom, creativity and legion.
               <br />
               <br />
-              Individuals are highly motivated to accomplish their dreams and
-              interests in the lab with highly advanced equipment and a
-              supportive environment that encourages experimentation and growth.
+              Here, individuals accelerate themselves to search the "Next" through advanced technologies all condensed inside a 
+              common lab space that encourages experimentation and growth.
             </p>
           </div>
         </section>
       </div>
 
-      {/* STATS SECTION (Solid Background covers the parallax image) */}
+      
       <section data-nav-color="black" className="light-section relative z-30 w-full bg-[#EAEAE5] px-6 py-40">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-24">
           {/* STAT 1 */}
@@ -193,7 +191,7 @@ const Info = () => {
               [ 1 ]
             </span>
             <h3 className="font-bebas text-5xl md:text-7xl text-[#1A1A1A] leading-none uppercase">
-              <CountUp end={20} />+ HACKATHON WINS
+              <CountUp end={300} />+ HACKATHON WINS
             </h3>
             <div className="h-px w-24 bg-[#1A1A1A]/20 my-6" />
             <p className="font-roboto-mono text-base md:text-lg text-gray-600 leading-relaxed max-w-sm">
@@ -209,7 +207,7 @@ const Info = () => {
               [ 2 ]
             </span>
             <h3 className="font-bebas text-5xl md:text-7xl text-[#1A1A1A] leading-none uppercase">
-              <CountUp end={50} />+ LIVE PROJECTS
+              <CountUp end={500} />+ LIVE PROJECTS
             </h3>
             <div className="h-px w-24 bg-[#1A1A1A]/20 my-6" />
             <p className="font-roboto-mono text-base md:text-lg text-gray-600 leading-relaxed max-w-sm">
@@ -224,7 +222,7 @@ const Info = () => {
               [ 3 ]
             </span>
             <h3 className="font-bebas text-5xl md:text-7xl text-[#1A1A1A] leading-none uppercase">
-              <CountUp end={10} /> PATENTS FILED
+              <CountUp end={20} /> PATENTS FILED
             </h3>
             <div className="h-px w-24 bg-[#1A1A1A]/20 my-6" />
             <p className="font-roboto-mono text-base md:text-lg text-gray-600 leading-relaxed max-w-sm">
@@ -239,7 +237,7 @@ const Info = () => {
               [ 4 ]
             </span>
             <h3 className="font-bebas text-5xl md:text-7xl text-[#1A1A1A] leading-none uppercase">
-              <CountUp end={15} /> RESEARCH PAPERS
+              <CountUp end={50} /> + RESEARCH PAPERS
             </h3>
             <div className="h-px w-24 bg-[#1A1A1A]/20 my-6" />
             <p className="font-roboto-mono text-base md:text-lg text-gray-600 leading-relaxed max-w-sm">

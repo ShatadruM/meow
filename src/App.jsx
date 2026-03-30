@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'; // Removed useState
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useLoading } from './context/LoadingContext'; // <-- 1. Import the custom hook
+import React, { useRef,useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; 
+import { useLoading } from './context/LoadingContext'; 
 
 import Home from './pages/Home';
 import Info from './pages/Info';
@@ -15,16 +15,33 @@ import Pausch from './pages/labs/Pausch';
 import Mccarthy from './pages/labs/Mccarthy';
 import Satoshi from './pages/labs/Satoshi';
 import Tesla from './pages/labs/Tesla';
-import Card from './components/Card';
+//import Card from './components/Card';
 import Noise from './animations/Noise';
 import CustomCursor from './components/Cursor';
 import Loader from './components/Loader'; 
 
+// Listens for route change
+function RouteChangeListener() {
+  const location = useLocation();
+  const { setIsLoading, isInitialLoad } = useLoading();
+  
+  // Create a ref to remember the last URL we were on
+  const lastPath = useRef(location.pathname);
+
+  useEffect(() => {
+    // ONLY trigger the loader if it's not the first load AND the URL actually changed
+    if (!isInitialLoad && location.pathname !== lastPath.current) {
+      setIsLoading(true);
+      lastPath.current = location.pathname; // Update the ref to the new URL
+    }
+  }, [location.pathname, isInitialLoad, setIsLoading]); 
+
+  return null;
+}
+
 function App() {
-  // 2. Pull the state globally instead of locally!
   const { isLoading, setIsLoading } = useLoading();
 
-  // Prevent scrolling on the body while the loader is active
   useEffect(() => {
     if (isLoading) {
       document.body.style.overflow = 'hidden';
@@ -32,10 +49,13 @@ function App() {
       document.body.style.overflow = 'auto';
     }
   }, [isLoading]);
-
+  
   return (
     <Router>
       <CustomCursor />
+      
+      
+      <RouteChangeListener />
       
       {/* The Loader will now update the GLOBAL state when it finishes */}
       {isLoading && (
@@ -68,22 +88,6 @@ function App() {
           <Route path="/labs/mccarthy" element={<Mccarthy />} />
           <Route path="/labs/satoshi" element={<Satoshi />} />  
           <Route path="/labs/tesla" element={<Tesla />} />
-          <Route path="/test" element={<Card />} />
-          <Route 
-            path="/card" 
-            element={
-              <Card 
-                name="John Doe" 
-                idNumber="12345" 
-                photoUrl="/photo.png" 
-                role="Member" 
-                links={[
-                  "https://github.com/ShatadruM",
-                  "https://www.linkedin.com/in/shatadru-mukhopadhyay-6a5a4b291/"
-                ]}
-              />
-            } 
-          />
         </Routes>
       </div>
 

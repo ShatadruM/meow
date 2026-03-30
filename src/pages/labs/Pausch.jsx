@@ -7,7 +7,6 @@ import Card2 from '../../components/Card2';
 const Pausch = () => {
   useLenis();
   const containerRef = useRef(null);
-   // Group members dynamically based on your JSON roles
   const teamGroups = [
     {
       title: "SYNDICATES",
@@ -25,7 +24,7 @@ const Pausch = () => {
 
   return (
   <>
-   {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
+   
    <div className='h-auto'>
     <div data-nav-color="purple" ref={containerRef} className="relative w-full h-screen bg-[#1a0545] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
@@ -33,16 +32,16 @@ const Pausch = () => {
                       justify-center items-center md:justify-between 
                       px-4 md:px-20 pb-20 md:pb-0 translate-y-12 md:translate-y-32">
         
-        {/* LEFT TEXT "BEND REALITY" */}
+       
         <div className="left-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[13vw] leading-[0.85] text-[#a146e7]">
-            BEND<br/>
-            <span className="text-[#a146e7]">REALITY</span>
+            PLAY<br/>
+            <span className="text-[#a146e7]">BOLD</span>
           </h1>
         </div>
 
         {/* CENTER IMAGE */}
-        {/* Changed to relative for mobile to sit in flex flow, absolute on md: to keep desktop unchanged */}
+       
         <div className="center-image relative md:absolute 
                         md:left-1/2 md:-translate-x-1/2 
                         md:top-1/2 md:-translate-y-1/2 
@@ -65,18 +64,17 @@ const Pausch = () => {
           />
         </div>
 
-        {/* RIGHT TEXT "BUILD PLAY" */}
+        {/* RIGHT TEXT */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[13vw] leading-[0.85] text-[#a146e7]">
             BUILD<br/>
-            <span className="text-[#a146e7]">PLAY</span>
+            <span className="text-[#a146e7]">WORLDS</span>
           </h1>
         </div>
 
       </div>
 
-      {/* TOP TEXT: "PAUSCH LAB" */}
-      {/* Changed top-24 to top-8 for mobile, kept md:top-32 for desktop */}
+     
       <div className="top-text absolute top-8 md:top-32 left-1/2 -translate-x-1/2 z-20">
         <a 
           href="#" 
@@ -154,9 +152,7 @@ const Pausch = () => {
                 </h2>
               </div>
 
-              {/* Grid: 1 col on mobile, up to 4 on desktop. 
-                  gap-y-24 prevents vertical overlapping.
-                  pr-12 (padding-right) and pb-12 ensure edge cards don't bleed out of screen on mobile when sliding 48px */}
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-24 pr-12 pb-12">
                 {group.members.map((member) => (
                   <div key={member.id} className="flex justify-center sm:justify-start">
@@ -199,10 +195,7 @@ const TiltedMarquee = () => {
       className="relative w-full h-[20vh] flex items-center justify-center bg-black"
       style={{ overflowX: 'clip' }}
     >
-      {/* FIXED: Added lg:translate-y-12 right here on the wrapper! 
-        This moves the entire black band down on laptops without fighting GSAP.
-        Adjust the "12" to "16" or "20" if you need it lower.
-      */}
+    
       <div className="absolute w-[200vw] rotate-10 bg-[#000000] flex select-none py-6 z-10 lg:translate-y-12">
         
         <div 

@@ -36,8 +36,8 @@ const Tesla = () => {
         {/* LEFT TEXT "BEND REALITY" */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#39ff14]">
-           ROBOT<br/>
-            <span className="text-[#39ff14]">LIFE</span>
+           WIRE<br/>
+            <span className="text-[#39ff14]">IT</span>
           </h1>
         </div>
 
@@ -68,8 +68,8 @@ const Tesla = () => {
         {/* RIGHT TEXT "BUILD PLAY" */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#39ff14]">
-            DREAM<br/>
-            <span className="text-[#39ff14]">PI</span>
+            POWER<br/>
+            <span className="text-[#39ff14]">IT</span>
           </h1>
         </div>
 

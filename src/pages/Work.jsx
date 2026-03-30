@@ -34,7 +34,7 @@ const Work = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative w-full bg-[#EAEAE5]">
+    <section data-nav-color="black" ref={containerRef} className="relative w-full bg-[#EAEAE5]">
       
       <div className="relative md:sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
         {/* Mobile: Anchored to bottom, centered with gap. Desktop: Centered vertically, spread apart */}

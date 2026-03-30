@@ -36,8 +36,8 @@ const Satoshi = () => {
         {/* LEFT TEXT "BEND REALITY" */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1a0088]">
-            BEND<br/>
-            <span className="text-[#1a0088]">REALITY</span>
+            HACK<br/>
+            <span className="text-[#1a0088]">FIRST</span>
           </h1>
         </div>
 
@@ -68,8 +68,8 @@ const Satoshi = () => {
         {/* RIGHT TEXT "BUILD PLAY" */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1a0088]">
-            BUILD<br/>
-            <span className="text-[#1a0088]">PLAY</span>
+            TRUST<br/>
+            <span className="text-[#1a0088]">NONE</span>
           </h1>
         </div>
 

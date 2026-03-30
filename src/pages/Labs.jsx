@@ -78,14 +78,14 @@ const Labs = () => {
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811547/mccarthy-vid_nr4brw.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882589/John_Mccarthy_oojmsm.mp4"
         title="MCCARTHY LAB"
         description="Building high-performance ML pipelines and NLP systems to unlock deep contextual understanding and drive data-centric decision-making."
         linkUrl="/labs/mccarthy"
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811538/pausch-vid_khrnkt.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882585/Randy_Pausch_wnq6sz.mp4"
         title="PAUSCH LAB"
         description="Connecting the physical and digital worlds through AR and VR technology."
         linkUrl="/labs/pausch"
@@ -99,7 +99,7 @@ const Labs = () => {
       />
 
       <VideoParallaxSection 
-        videoSrc="/satoshi-vid.mp4"
+        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882583/Satoshi_Nakamotto_cg3yrn.mp4"
         title="SATOSHI LAB"
         description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
         linkUrl="/labs/satoshi"

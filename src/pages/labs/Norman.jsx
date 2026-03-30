@@ -9,7 +9,7 @@ const Norman = () => {
  
   const containerRef = useRef(null);
 
-  // Group members dynamically based on your JSON roles
+  
   const teamGroups = [
     {
       title: "SYNDICATES",
@@ -27,7 +27,7 @@ const Norman = () => {
 
   return (
   <>
-   {/* FIXED: Removed the global overflow wrapper so sticky works perfectly again */}
+   
    <div className='h-auto'>
     <div data-nav-color="red" ref={containerRef} className="relative w-full h-screen bg-[#f6efae] overflow-hidden flex flex-col">
       <div className="relative z-10 flex-1 flex w-full 
@@ -35,7 +35,7 @@ const Norman = () => {
                       justify-center items-center md:justify-between 
                       px-4 md:px-20 pb-20 md:pb-0 translate-y-12 md:translate-y-32">
         
-        {/* LEFT TEXT "BUILD BOLD" */}
+        {/* LEFT TEXT */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[#f25a42] text-[25vw] md:text-[15vw] leading-[0.85] ">
             BUILD<br/>
@@ -66,7 +66,7 @@ const Norman = () => {
           />
         </div>
 
-        {/* RIGHT TEXT "MADE HUMAN" */}
+        {/* RIGHT TEXT */}
         <div className="right-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#f25a42]">
             MADE<br/>
@@ -154,9 +154,7 @@ const Norman = () => {
                 </h2>
               </div>
 
-              {/* Grid: 1 col on mobile, up to 4 on desktop. 
-                  gap-y-24 prevents vertical overlapping.
-                  pr-12 (padding-right) and pb-12 ensure edge cards don't bleed out of screen on mobile when sliding 48px */}
+             
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-24 pr-12 pb-12">
                 {group.members.map((member) => (
                   <div key={member.id} className="flex justify-center sm:justify-start">

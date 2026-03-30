@@ -33,11 +33,11 @@ const Mccarthy = () => {
                       justify-center items-center md:justify-between 
                       px-4 md:px-20 pb-20 md:pb-0 translate-y-12 md:translate-y-32">
         
-        {/* LEFT TEXT "BEND REALITY" */}
+        {/* LEFT TEXT "BEND REALITY"    SMART  */}
         <div className="left-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1c55f1]">
-            BEND<br/>
-            <span className="text-[#1c55f1]">REALITY</span>
+           THINK<br/>
+            <span className="text-[#1c55f1]">DEEP</span>
           </h1>
         </div>
 
@@ -69,14 +69,13 @@ const Mccarthy = () => {
         <div className="right-text z-10 text-center mt-4 md:mt-0">
           <h1 className="font-bebas text-[25vw] md:text-[15vw] leading-[0.85] text-[#1c55f1]">
             BUILD<br/>
-            <span className="text-[#1c55f1]">PLAY</span>
+            <span className="text-[#1c55f1]">SMART</span>
           </h1>
         </div>
 
       </div>
 
-      {/* TOP TEXT: "PAUSCH LAB" */}
-      {/* Changed top-24 to top-8 for mobile, kept md:top-32 for desktop */}
+     
       <div className="top-text absolute top-8 md:top-32 left-1/2 -translate-x-1/2 z-20">
         <a 
           href="#" 

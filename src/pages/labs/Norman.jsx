@@ -126,7 +126,7 @@ const Norman = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug font-sans text-gray-200">
+          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
             Norman lab is a center of innovation, specializing on web development, app development, cloud computing, and UI/UX design. Norman's lab is dedicated to pushing the boundaries of online experiences by creating seamless and user-friendly interfaces. Our focus extends beyond typical web apps to app development, where we create creative solutions based on cutting-edge technologies and best practices.
           </p>
         </div>

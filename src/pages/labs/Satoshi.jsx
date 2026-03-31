@@ -114,20 +114,17 @@ const Satoshi = () => {
         {/* Scroll Block 1 */}
         <div className="flex flex-col items-start pt-4 pb-12 md:pt-[25vh] md:pb-0 md:h-screen md:justify-start">
           <p className="text-base md:text-xl font-serif italic mb-6 leading-relaxed text-gray-200">
-            "A product is more than its features. It is an experience — an
-            experience shaped by expectations, context, culture, and
-            emotion. Designers must understand people before they try to
-            design for them."
+            "If you don't believe me or don't get it, I don't have time to try to convince you, sorry."
           </p>
           <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-white flex items-center gap-4">
-            <span className="w-6 h-0.5 bg-white block"></span> DON NORMAN
+            <span className="w-6 h-0.5 bg-white block"></span> SATOSHI NAKAMOTO
           </p>
         </div>
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug font-sans text-gray-200">
-            Norman lab is a center of innovation, specializing on web development, app development, cloud computing, and UI/UX design. Norman's lab is dedicated to pushing the boundaries of online experiences by creating seamless and user-friendly interfaces. Our focus extends beyond typical web apps to app development, where we create creative solutions based on cutting-edge technologies and best practices.
+          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+            Satoshi lab is a hub of digital security, specializing in blockchain technology, cybersecurity, and advanced malware analysis. Satoshi lab is dedicated to fortifying decentralized networks by developing secure and resilient cryptographic architectures. Our focus extends beyond standard threat detection to comprehensive vulnerability assessment, where we engineer robust defense mechanisms driven by zero trust principles and distributed ledgers.
           </p>
         </div>
 

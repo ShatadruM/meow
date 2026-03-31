@@ -82,7 +82,7 @@ const Tesla = () => {
           href="#" 
           className="text-[#39ff14] font-mono text-[10px] md:text-xs tracking-[0.3em] uppercase relative z-10 underline underline-offset-5 decoration-1"
         >
-          [Satoshi Lab]
+          [Tesla Lab]
         </a>
       </div>
 
@@ -114,20 +114,17 @@ const Tesla = () => {
         {/* Scroll Block 1 */}
         <div className="flex flex-col items-start pt-4 pb-12 md:pt-[25vh] md:pb-0 md:h-screen md:justify-start">
           <p className="text-base md:text-xl font-serif italic mb-6 leading-relaxed text-gray-200">
-            "A product is more than its features. It is an experience — an
-            experience shaped by expectations, context, culture, and
-            emotion. Designers must understand people before they try to
-            design for them."
+            "Be alone, that is the secret of invention; be alone, that is when ideas are born."
           </p>
           <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-white flex items-center gap-4">
-            <span className="w-6 h-0.5 bg-white block"></span> DON NORMAN
+            <span className="w-6 h-0.5 bg-white block"></span> NIKOLA TESLA
           </p>
         </div>
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug font-sans text-gray-200">
-            Norman lab is a center of innovation, specializing on web development, app development, cloud computing, and UI/UX design. Norman's lab is dedicated to pushing the boundaries of online experiences by creating seamless and user-friendly interfaces. Our focus extends beyond typical web apps to app development, where we create creative solutions based on cutting-edge technologies and best practices.
+          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+Tesla lab is a center of hardware innovation, specializing in electronics, embedded systems, and microcontroller architectures. Tesla lab is dedicated to bridging the physical and digital worlds by designing highly efficient and responsive circuitry. Our focus extends beyond standard hardware design to complex IoT integrations, where we engineer robust physical solutions driven by real time operating systems and edge computing.
           </p>
         </div>
 

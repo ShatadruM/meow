@@ -188,7 +188,9 @@ const Info = () => {
           </div>
         </section>
 
-        <section className="relative z-20 w-full bg-black px-6 py-32">
+        
+      </div>
+      <section className="relative z-20 w-full bg-black px-6 py-32">
           <div className="mx-auto flex w-full max-w-5xl flex-col gap-20 ">
             <div className="mb-16 border-b-4 border-white pb-4">
               <h2 data-cursor="hover" className="whitespace-nowrap text-center font-bebas text-5xl md:text-8xl leading-[0.85] tracking-tight text-yellow-50 uppercase">
@@ -226,7 +228,6 @@ const Info = () => {
             </div>
           </div>
         </section>
-      </div>
 
       
       <section data-nav-color="black" className="light-section relative z-30 w-full bg-[#EAEAE5] px-6 py-40">

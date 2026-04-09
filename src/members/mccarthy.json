@@ -186,5 +186,17 @@
       "linkedin": "https://www.linkedin.com/in/aaryan-regmi-098872196/",
       "twitter": "https://x.com/aaryanreegmi"
     }
+  },
+  {
+    "id": "AP23110010402",
+    "idNumber": "AP23110010402",
+    "name": "Bhavana Praneeth",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/IMG-20250220-WA0021 - praneeth bhavana _ AP23110010402.jpg",
+    "role": "Syndicate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/ZELTROX1",
+      "linkedin": "https://www.linkedin.com/in/zeltrox/"
+    }
   }
 ]

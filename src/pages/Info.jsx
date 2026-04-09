@@ -93,7 +93,7 @@ const Info = () => {
           ref={bgRef}
           className="absolute inset-0 z-0 opacity-80 h-full w-full will-change-transform 
               bg-center bg-no-repeat bg-cover
-              bg-[url('https://d3fmezyua6t45b.cloudfront.net/info-page/info-mob2.png')] 
+              bg-[url('https://d3fmezyua6t45b.cloudfront.net/info-page/info-mob-mine.png')] 
               md:bg-[url('https://d3fmezyua6t45b.cloudfront.net/info-page/info-deskt.png')]"
         />
         <div
@@ -190,7 +190,7 @@ const Info = () => {
 
         
       </div>
-      <section className="relative z-20 w-full bg-black px-6 py-32">
+      <section data-nav-color="white" className="relative z-20 w-full bg-black px-6 py-32">
           <div className="mx-auto flex w-full max-w-5xl flex-col gap-20 ">
             <div className="mb-16 border-b-4 border-white pb-4">
               <h2 data-cursor="hover" className="whitespace-nowrap text-center font-bebas text-5xl md:text-8xl leading-[0.85] tracking-tight text-yellow-50 uppercase">
@@ -208,8 +208,8 @@ const Info = () => {
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end text-center md:text-right">
                   <p className="font-roboto-mono text-xl md:text-xl text-gray-300 italic leading-relaxed">
-                    "Next Tech Lab (NTL) is a student-led innovation hub where top tech talent collaborates on bold projects and ideas that push beyond the classroom. Through hands-on research, patents, demos, and workshops, NTL fosters creativity, technical mastery, and leadership—empowering students to tackle real-world tech challenges."
-                  </p>
+                    "NTL began as an experiment to bridge the gap between the classroom and the industry; today, it’s a community that has gone far beyond that, building the future on its own terms."
+                    </p>
                 </div>
               </div>
 

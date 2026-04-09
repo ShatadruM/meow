@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const VideoParallaxSection = ({ videoSrc, title, description, linkUrl }) => {
+// Added mobileVideoSrc to props
+const VideoParallaxSection = ({ videoSrc, mobileVideoSrc, title, description, linkUrl }) => {
   const [sectionNode, setSectionNode] = useState(null);
   const [scrollData, setScrollData] = useState({ scrollY: 0, sectionTop: 0 });
 
@@ -34,7 +35,6 @@ const VideoParallaxSection = ({ videoSrc, title, description, linkUrl }) => {
   return (
     <section 
       ref={setSectionNode}
-      // CHANGED: Added 'sticky top-0'. This makes it stack over the previous one.
       className="sticky top-0 h-screen w-full z-40 overflow-hidden bg-black border-t border-white/10 shadow-2xl"
     >
       {/* 1. VIDEO LAYER */}
@@ -47,9 +47,14 @@ const VideoParallaxSection = ({ videoSrc, title, description, linkUrl }) => {
           loop
           muted
           playsInline
+          // Using a key ensures the video element re-mounts when the source needs to change
+          key={videoSrc + mobileVideoSrc} 
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={videoSrc} type="video/mp4" />
+          {/* Desktop Source: Hidden on mobile */}
+          <source src={videoSrc} type="video/mp4" media="(min-width: 768px)" />
+          {/* Mobile Source: Shown on mobile (if provided, else fallback to desktop) */}
+          <source src={mobileVideoSrc || videoSrc} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/50" />
       </div>

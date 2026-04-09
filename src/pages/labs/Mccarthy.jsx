@@ -124,10 +124,7 @@ const Mccarthy = () => {
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
           <p className="text-xl md:text-3xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
-            McCarthy lab is a hub of artificial intelligence, specializing in machine learning, deep learning, NLP, and RAG architectures. McCarthy lab is committed to advancing 
-            intelligent systems by building highly accurate and context-aware foundation models. Our expertise extends beyond standard predictive algorithms to complex neural networks,
-             where we engineer sophisticated solutions driven by state-of-the-art research and scalable infrastructure.
-          </p>
+           McCarthy Lab serves as the intellectual hub for artificial intelligence, focusing on the development of novel algorithms across supervised, unsupervised, and reinforcement learning. Our research ranges from refining classical statistical models to architecting sophisticated deep learning networks. We seek a rigorous mathematical understanding of why specific computational methods succeed, grounding our work in both theory and practical experimentation.  </p>
         </div>
 
       </div>

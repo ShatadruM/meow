@@ -83,7 +83,7 @@ export default function Loader({ onComplete }) {
           <div
             key={index}
             ref={(el) => (wordsRef.current[index] = el)}
-            className="absolute w-full text-center translate-y-[110%] text-7xl md:text-[12vw] font-black uppercase tracking-tighter text-yellow-50 md:text-[100px]"
+            className="absolute w-full text-center translate-y-[110%] text-6xl md:text-[12vw] font-black uppercase tracking-tighter text-yellow-50 md:text-[100px]"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             {word}

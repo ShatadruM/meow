@@ -18,8 +18,8 @@ const Labs = () => {
   {/* 1. BACKGROUND IMAGE DIV */}
   <div 
     className="absolute inset-0 z-0 bg-cover bg-center opacity-80
-               bg-[url('/lab-bg2.png')]      
-               md:bg-[url('/lab-bg.png')]     
+               bg-[url('https://d3fmezyua6t45b.cloudfront.net/lab-vids/lab-bg2.png')]      
+               md:bg-[url('https://d3fmezyua6t45b.cloudfront.net/lab-vids/lab-bg.png')]     
               " 
     // Removed the style={{ backgroundImage... }} prop so classes can take effect
   />
@@ -71,35 +71,35 @@ const Labs = () => {
 
       
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811575/Norman-vid_rx6jve.mp4" 
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Norman-vid_rx6jve.mp4" 
         title="NORMAN LAB"
         description="Pushing the boundaries of Design and Development to solve complex problems in real-time environments."
         linkUrl="/labs/norman"
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882589/John_Mccarthy_oojmsm.mp4"
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/John_Mccarthy_oojmsm.mp4"
         title="MCCARTHY LAB"
         description="Building high-performance ML pipelines and NLP systems to unlock deep contextual understanding and drive data-centric decision-making."
         linkUrl="/labs/mccarthy"
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882585/Randy_Pausch_wnq6sz.mp4"
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Randy_Pausch_wnq6sz.mp4"
         title="PAUSCH LAB"
         description="Connecting the physical and digital worlds through AR and VR technology."
         linkUrl="/labs/pausch"
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774811430/Nikola_Tesla_qwkdwq.mp4"
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Nikola_Tesla_qwkdwq.mp4"
         title="TESLA LAB"
         description="Engineering autonomous systems capable of navigating and manipulating the world with precision."
         linkUrl="/labs/tesla"
       />
 
       <VideoParallaxSection 
-        videoSrc="https://res.cloudinary.com/dib8gimwq/video/upload/v1774882583/Satoshi_Nakamotto_cg3yrn.mp4"
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Satoshi_Nakamotto_cg3yrn.mp4"
         title="SATOSHI LAB"
         description="Developing next-generation security protocols to protect infrastructure from evolving digital threats."
         linkUrl="/labs/satoshi"

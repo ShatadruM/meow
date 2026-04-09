@@ -121,7 +121,7 @@ const Pausch = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-xl md:text-3xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
            Pausch lab is a hub of immersive media, specializing in AR, VR, extended reality, and 2D and 3D game development. Pausch lab is dedicated to redefining digital interaction by creating highly engaging and spatially aware virtual environments. Our focus extends beyond traditional gaming to fully interactive simulations, where we craft compelling spatial experiences driven by real time rendering engines.
           </p>
         </div>

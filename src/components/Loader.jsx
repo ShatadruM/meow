@@ -79,7 +79,7 @@ export default function Loader({ onComplete }) {
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#0c0c0c]"
     >
       <div className="relative flex h-[95px] w-full items-center justify-center overflow-hidden">
-        {words.map((word, index) => (
+        {words?.map((word, index) => (
           <div
             key={index}
             ref={(el) => (wordsRef.current[index] = el)}

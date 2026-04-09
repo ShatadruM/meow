@@ -92,9 +92,9 @@ const Info = () => {
         <div
           ref={bgRef}
           className="absolute inset-0 z-0 opacity-80 h-full w-full will-change-transform 
-              bg-center bg-no-repeat bg-cover 
-              bg-[url('/info-mob2.png')] 
-              md:bg-[url('/info-deskt.png')]"
+              bg-center bg-no-repeat bg-cover
+              bg-[url('https://d3fmezyua6t45b.cloudfront.net/info-page/info-mob2.png')] 
+              md:bg-[url('https://d3fmezyua6t45b.cloudfront.net/info-page/info-deskt.png')]"
         />
         <div
           ref={textRef}
@@ -238,7 +238,7 @@ const Info = () => {
               [ 1 ]
             </span>
             <h3 className="font-bebas text-5xl md:text-7xl text-[#1A1A1A] leading-none uppercase">
-              <CountUp end={300} />+ HACKATHON WINS
+              <CountUp end={150} />+ HACKATHON WINS
             </h3>
             <div className="h-px w-24 bg-[#1A1A1A]/20 my-6" />
             <p className="font-roboto-mono text-base md:text-lg text-gray-600 leading-relaxed max-w-sm">

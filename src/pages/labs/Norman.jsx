@@ -126,7 +126,7 @@ const Norman = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-xl md:text-3xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
             Norman lab is a center of innovation, specializing on web development, app development, cloud computing, and UI/UX design. Norman's lab is dedicated to pushing the boundaries of online experiences by creating seamless and user-friendly interfaces. Our focus extends beyond typical web apps to app development, where we create creative solutions based on cutting-edge technologies and best practices.
           </p>
         </div>
@@ -197,21 +197,17 @@ const TiltedMarquee = () => {
       className="relative w-full h-[20vh] flex items-center justify-center bg-black"
       style={{ overflowX: 'clip' }}
     >
-      {/* FIXED: Added lg:translate-y-12 right here on the wrapper! 
-        This moves the entire black band down on laptops without fighting GSAP.
-        Adjust the "12" to "16" or "20" if you need it lower.
-      */}
-      <div className="absolute w-[200vw] rotate-10 bg-[#000000] flex select-none py-6 z-10 lg:translate-y-12">
+      <div className="absolute w-[200vw] rotate-[10deg] bg-[#000000] flex select-none py-6 z-10 lg:translate-y-12">
         
         <div 
           ref={marqueeRef} 
-          // Removed the translate class from here so GSAP has full control
           className="flex whitespace-nowrap will-change-transform w-max"
         >
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercasetext-[#f25a42] px-4">
+         
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#f25a42] px-4">
             {text} {text}
           </span>
-          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercasetext-[#f25a42] px-4">
+          <span className="text-[12vw] md:text-[8vw] font-bebas font-bold leading-none uppercase text-[#f25a42] px-4">
             {text} {text}
           </span>
         </div>

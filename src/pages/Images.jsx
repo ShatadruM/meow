@@ -17,28 +17,39 @@ const Images = () => {
   useEffect(() => {
     setMounted(true); // Ensures document.body is ready for the Portal
 
-    const fetchImages = async () => {
-      try {
-        const response = await fetch(`https://res.cloudinary.com/${cloudName}/image/list/${tag}.json`);
-        if (!response.ok) throw new Error("Cloudinary list not found.");
+   const fetchImages = async () => {
+  // Your specific CloudFront domain
+  //const cfDomain = "https://d3fmezyua6t45b.cloudfront.net";
 
-        const data = await response.json();
+  try {
+    // 1. Fetch the JSON file you manually uploaded to S3
+    const response = await fetch(`/gallery-data.json`);
+    if (!response.ok) throw new Error("CloudFront gallery data not found.");
 
-        const formattedImages = data.resources.map((img) => ({
-          id: img.public_id,
-          src: `https://res.cloudinary.com/${cloudName}/image/upload/f_auto,q_auto,w_800/v${img.version}/${img.public_id}.${img.format}`,
-          highResSrc: `https://res.cloudinary.com/${cloudName}/image/upload/f_auto,q_auto,w_1920/v${img.version}/${img.public_id}.${img.format}`,
-          aspectRatio: `${img.width} / ${img.height}`,
-         
-        }));
+    const data = await response.json();
 
-        setImages(formattedImages);
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error fetching images:", error);
-        setIsLoading(false);
-      }
-    };
+    // 2. Map the data to your component's required structure
+    const formattedImages = data.map((img) => ({
+      id: img.fileName,
+      
+      // S3/CloudFront serves the exact file you uploaded.
+      // If you need a smaller thumbnail, you must manually upload a smaller version
+      // (e.g., img.fileName.replace('.jpg', '-thumb.jpg'))
+      src: `${img.fileName}`,
+      
+      // Setting highRes to the same source, assuming you upload high-quality originals
+      highResSrc: `${img.fileName}`,
+      
+      aspectRatio: `${img.width} / ${img.height}`,
+    }));
+
+    setImages(formattedImages);
+    setIsLoading(false);
+  } catch (error) {
+    console.error("Error fetching images from CloudFront:", error);
+    setIsLoading(false);
+  }
+};
 
     fetchImages();
   }, []);

@@ -123,7 +123,7 @@ const Tesla = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-xl md:text-3xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
 Tesla lab is a center of hardware innovation, specializing in electronics, embedded systems, and microcontroller architectures. Tesla lab is dedicated to bridging the physical and digital worlds by designing highly efficient and responsive circuitry. Our focus extends beyond standard hardware design to complex IoT integrations, where we engineer robust physical solutions driven by real time operating systems and edge computing.
           </p>
         </div>

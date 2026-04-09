@@ -59,7 +59,7 @@ const VideoParallaxSection = ({ videoSrc, title, description, linkUrl }) => {
         className="relative z-20 h-full flex flex-col items-center justify-center text-center px-6"
         style={{ transform: `translateY(${textMove}px)` }}
       >
-        <h2 className="font-bebas text-6xl md:text-[20rem] text-yellow-50 tracking-tighter uppercase leading-none mb-6" >
+        <h2 className="font-bebas text-6xl md:text-[18rem] text-yellow-50 tracking-tighter uppercase leading-none mb-6" >
           {title}
         </h2>
         

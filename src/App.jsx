@@ -1,4 +1,4 @@
-import React, { useRef,useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; 
 import { useLoading } from './context/LoadingContext'; 
 
@@ -15,10 +15,24 @@ import Pausch from './pages/labs/Pausch';
 import Mccarthy from './pages/labs/Mccarthy';
 import Satoshi from './pages/labs/Satoshi';
 import Tesla from './pages/labs/Tesla';
-//import Card from './components/Card';
+import NotFound from './pages/NotFound';
 import Noise from './animations/Noise';
 import CustomCursor from './components/Cursor';
 import Loader from './components/Loader'; 
+
+// 1. Define your valid routes here
+const VALID_ROUTES = [
+  '/',
+  '/info',
+  '/labs',
+  '/work',
+  '/gallery',
+  '/labs/norman',
+  '/labs/pausch',
+  '/labs/mccarthy',
+  '/labs/satoshi',
+  '/labs/tesla'
+];
 
 // Listens for route change
 function RouteChangeListener() {
@@ -31,7 +45,14 @@ function RouteChangeListener() {
   useEffect(() => {
     // ONLY trigger the loader if it's not the first load AND the URL actually changed
     if (!isInitialLoad && location.pathname !== lastPath.current) {
-      setIsLoading(true);
+      
+      // 2. Check if the new path is in our list of valid routes
+      const isValidRoute = VALID_ROUTES.includes(location.pathname);
+      
+      if (isValidRoute) {
+        setIsLoading(true);
+      }
+      
       lastPath.current = location.pathname; // Update the ref to the new URL
     }
   }, [location.pathname, isInitialLoad, setIsLoading]); 
@@ -53,7 +74,6 @@ function App() {
   return (
     <Router>
       <CustomCursor />
-      
       
       <RouteChangeListener />
       
@@ -88,6 +108,7 @@ function App() {
           <Route path="/labs/mccarthy" element={<Mccarthy />} />
           <Route path="/labs/satoshi" element={<Satoshi />} />  
           <Route path="/labs/tesla" element={<Tesla />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
 

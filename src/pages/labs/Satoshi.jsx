@@ -123,7 +123,7 @@ const Satoshi = () => {
 
         {/* Scroll Block 2 */}
         <div className="flex flex-col items-start pb-16 md:pb-0 md:h-screen md:justify-start">
-          <p className="text-xl md:text-4xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="text-xl md:text-3xl leading-snug text-gray-200" style={{ fontFamily: "'Inter', sans-serif" }}>
             Satoshi lab is a hub of digital security, specializing in blockchain technology, cybersecurity, and advanced malware analysis. Satoshi lab is dedicated to fortifying decentralized networks by developing secure and resilient cryptographic architectures.
           </p>
         </div>

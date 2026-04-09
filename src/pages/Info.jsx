@@ -4,6 +4,8 @@ import AnimatedHeading from "../animations/AnimatedHeading";
 import FadeDropIn from "../animations/FadeDropIn";
 import { useLenis } from "../hooks/useLenis";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Card2 from "../components/Card2"; 
+import FA from "../members/FA.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,9 +22,14 @@ const CountUp = ({ end, duration = 2000 }) => {
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
           let start = 0;
-          const stepTime = Math.max(Math.floor(duration / end), 20);
+          // Increment by 5 if end is greater than 200, otherwise increment by 1
+          const increment = end > 200 ? 5 : 1;
+          const steps = Math.ceil(end / increment);
+          const stepTime = Math.max(Math.floor(duration / steps), 20);
+          
           const timer = setInterval(() => {
-            start += 1;
+            start += increment;
+            if (start > end) start = end; // Prevent overshooting the target number
             setCount(start);
             if (start >= end) clearInterval(timer);
           }, stepTime);
@@ -79,22 +86,22 @@ const Info = () => {
       ref={containerRef}
       className="relative w-full bg-black overflow-hidden"
     >
-      {/*  HERO SECTION */}
+      {/* HERO SECTION */}
       <div data-nav-color="white" className="relative min-h-[250vh] w-full">
         
         <div
           ref={bgRef}
           className="absolute inset-0 z-0 opacity-80 h-full w-full will-change-transform 
-             bg-center bg-no-repeat bg-cover 
-             bg-[url('/info-mob2.png')] 
-             md:bg-[url('/info-deskt.png')]"
+              bg-center bg-no-repeat bg-cover 
+              bg-[url('/info-mob2.png')] 
+              md:bg-[url('/info-deskt.png')]"
         />
         <div
           ref={textRef}
           className="relative z-10 flex h-screen w-full 
-             items-end justify-center pb-24      
-             md:items-center md:justify-between md:pb-0 
-             px-4 md:px-20 translate-y-32 will-change-transform"
+              items-end justify-center pb-24      
+              md:items-center md:justify-between md:pb-0 
+              px-4 md:px-20 translate-y-32 will-change-transform"
         >
           {/* LEFT TEXT "IN" */}
           <AnimatedHeading
@@ -178,6 +185,45 @@ const Info = () => {
               Here, individuals accelerate themselves to search the "Next" through advanced technologies all condensed inside a 
               common lab space that encourages experimentation and growth.
             </p>
+          </div>
+        </section>
+
+        <section className="relative z-20 w-full bg-black px-6 py-32">
+          <div className="mx-auto flex w-full max-w-5xl flex-col gap-20 ">
+            <div className="mb-16 border-b-4 border-white pb-4">
+              <h2 data-cursor="hover" className="whitespace-nowrap text-center font-bebas text-5xl md:text-8xl leading-[0.85] tracking-tight text-yellow-50 uppercase">
+              Faculty Advisors
+            </h2>
+            </div>
+            
+
+            <div className="flex flex-col gap-24">
+              {/* Professor 1: Dr. Suvendu Rana (Card Left, Quote Right) */}
+              <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+                <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+                  {/* Passing the first object from FA.json into the data prop */}
+                  <Card2 data={FA[0]} />
+                </div>
+                <div className="w-full md:w-1/2 flex justify-center md:justify-end text-center md:text-right">
+                  <p className="font-roboto-mono text-xl md:text-xl text-gray-300 italic leading-relaxed">
+                    "Next Tech Lab (NTL) is a student-led innovation hub where top tech talent collaborates on bold projects and ideas that push beyond the classroom. Through hands-on research, patents, demos, and workshops, NTL fosters creativity, technical mastery, and leadership—empowering students to tackle real-world tech challenges."
+                  </p>
+                </div>
+              </div>
+
+              {/* Professor 2: Dr. Ashu Abdul (Quote Left, Card Right) */}
+              <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-10 md:gap-16">
+                <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+                  {/* Passing the second object from FA.json into the data prop */}
+                  <Card2 data={FA[1]} />
+                </div>
+                <div className="w-full md:w-1/2 flex justify-center md:justify-start text-center md:text-left">
+                  <p className="font-roboto-mono text-xl md:text-xl text-gray-300 italic leading-relaxed">
+                    "Aligned with SRM University AP’s vision of transforming students through excellence in education and research, Next Tech Lab empowers young minds to learn, create, and lead with purpose."
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Dr. Shuvendu Rana",
+        "image": "/Rana.png",
+        "role": "Faculty Advisor",
+        "socialLinks": {
+      
+      
+      "portfolio": "https://www.srmap.edu.in/faculty/dr-shuvendu-rana/"
+      
+    }
+    },
+    {
+        "name": "Dr. Ashu Abdul",
+        "image": "/Abdul.png",
+        "role": "Faculty Advisor",
+        "socialLinks": {
+            "portfolio": "https://www.srmap.edu.in/faculty/dr-ashu-abdul/"
+        }
+    }
+]

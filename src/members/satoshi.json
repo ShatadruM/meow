@@ -128,5 +128,17 @@
       "portfolio": "https://rubberpirate.me",
       "twitter": "https://x.com/rubberpirate0"
     }
+  },
+  {
+    "id": "AP24110010415",
+    "idNumber": "AP24110010415",
+    "name": "Jayesh Krishna",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/papa_rv9ktk.jpg",
+    "role": "member",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/jayeshkrishna",
+     
+    }
   }
 ]

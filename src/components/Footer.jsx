@@ -72,7 +72,7 @@ const Footer = () => {
                   nexttechlab@srmap.edu.in
                </a>
                <a href="tel:9728697778" className="text-xs md:text-lg hover:text-gray-400">
-                  +91 972 869 7778
+                  +91 95733 98234
                </a>
              </div>
           </div>

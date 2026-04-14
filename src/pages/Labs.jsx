@@ -71,7 +71,7 @@ const Labs = () => {
       </div>
 
       <VideoParallaxSection
-        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Norman-vid_rx6jve.mp4"
+        videoSrc="https://d3fmezyua6t45b.cloudfront.net/lab-vids/Don_Norman.mp4"
         title="NORMAN LAB"
         description="Pushing the boundaries of Design and Development to solve complex problems in real-time environments."
         linkUrl="/labs/norman"

@@ -129,7 +129,7 @@
     "id": "AP2510070915",
     "idNumber": "AP2510070915",
     "name": "Rishabh Surana",
-    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/IMG_20260321_034722_-_Rishabh_Surana___AP25110070915_h7op5g.jpg",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/rishab.png ",
     "role": "Associate",
     "lab": "Pausch",
     "socialLinks": {
@@ -161,6 +161,18 @@
       "github": "https://github.com/DakshKulkarni",
       "linkedin": "https://www.linkedin.com/in/daksh-kulkarni-425476253",
       "portfolio": "https://dakshgamedev.netlify.app/"
+    }
+  },
+  {
+    "id": "AP22110010181",
+    "idNumber": "AP22110010181",
+    "name": "Anjana Modugu",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/anjana.jpeg",
+    "role": "Syndicate",
+    "lab": "Pausch",
+    "socialLinks": {
+      "github": "https://github.com/anjanamodugu2004",
+      "linkedin": "https://www.linkedin.com/in/anjana-modugu/"
     }
   }
 ]

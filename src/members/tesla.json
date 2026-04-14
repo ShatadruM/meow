@@ -4,7 +4,7 @@
     "id": "Ap25110030026",
     "idNumber": "Ap25110030026",
     "name": "Prince kumar yadav",
-    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/IMG_6676_-_Prince_Kumar_Yadav___AP25110030026_rjyxsf.jpg",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/prince.jpeg",
     "role": "Associate",
     "lab": "Tesla",
     "socialLinks": {
@@ -111,6 +111,18 @@
     "socialLinks": {
       "github": "https://github.com/Karthikeyaburra",
       "linkedin": "https://www.linkedin.com/in/burra-krishna-karthikeya-a34a8131b/"
+    }
+  },
+  {
+    "id": "AP25110020003",
+    "idNumber": "AP25110020003",
+    "name": "Paarth Singhal",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/20260105_200841.jpg",
+    "role": "Associate",
+    "lab": "Tesla",
+    "socialLinks": {
+      "github": "https://github.com/Paarth888",
+      "linkedin": "https://www.linkedin.com/in/paarth-singhal-680696368/"
     }
   }
 ]

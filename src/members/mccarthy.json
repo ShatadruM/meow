@@ -198,5 +198,18 @@
       "github": "https://github.com/ZELTROX1",
       "linkedin": "https://www.linkedin.com/in/zeltrox/"
     }
+  },
+  {
+    "id": "AP25110010902",
+    "idNumber": "AP25110010902",
+    "name": "S.MD. Arshadullah",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/arshad.jpg",
+    "role": "Associate",
+    "lab": "McCarthy",
+    "socialLinks": {
+      "github": "https://github.com/ArshadullaShaik",
+      "linkedin": "https://www.linkedin.com/in/shaikmohammedarshadulla",
+      "twitter": "https://x.com/valoucard"
+    }
   }
 ]

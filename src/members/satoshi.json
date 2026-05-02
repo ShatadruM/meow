@@ -140,5 +140,31 @@
       "linkedin": "https://www.linkedin.com/in/jayeshkrishna"
      
     }
+  },
+   {
+    "id": "AP23110011386",
+    "idNumber": "AP23110011386",
+    "name": "Shruthi Bhagawan",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/shruthi.png",
+    "role": "member",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/bhagawanshruthi",
+      "github": "https://github.com/ryqtor"
+     
+    }
+  },
+  {
+    "id": "AP25110010902",
+    "idNumber": "AP25110010902",
+    "name": "S.MD. Arshadullah",
+    "image": "https://d3fmezyua6t45b.cloudfront.net/lab-members/arshad.jpg",
+    "role": "Associate",
+    "lab": "Satoshi",
+    "socialLinks": {
+      "github": "https://github.com/ArshadullaShaik",
+      "linkedin": "https://www.linkedin.com/in/shaikmohammedarshadulla",
+      "twitter": "https://x.com/valoucard"
+    }
   }
 ]
